@@ -1,5 +1,5 @@
 //
-//  GameViewController.swift
+//  AppViewController.swift
 //  Evolution
 //
 //  Created by Martin Mlostek on 03.05.19.
@@ -10,14 +10,16 @@ import UIKit
 import QuartzCore
 import SceneKit
 
-class GameViewController: UIViewController {
+class AppViewController: UIViewController {
 
+    @IBOutlet weak var sceneView: SCNView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/model.dae")!
-        
+        let scene = SCNScene(named: "Assets.scnassets/model.dae")!
+
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
@@ -41,39 +43,34 @@ class GameViewController: UIViewController {
         scene.rootNode.addChildNode(ambientLightNode)
         
         // retrieve the ship node
-        let ship = scene.rootNode.childNode(withName: "Root", recursively: true)!
+        let entity = scene.rootNode.childNode(withName: "Entity", recursively: true)!
         
         // animate the 3d object
-        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-        
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
-        
+        entity.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
+
         // set the scene to the view
-        scnView.scene = scene
+        sceneView.scene = scene
         
         // allows the user to manipulate the camera
-        scnView.allowsCameraControl = true
+        sceneView.allowsCameraControl = true
         
         // show statistics such as fps and timing information
-        scnView.showsStatistics = true
+        sceneView.showsStatistics = true
         
         // configure the view
-        scnView.backgroundColor = UIColor.black
+        sceneView.backgroundColor = UIColor.black
         
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        scnView.addGestureRecognizer(tapGesture)
+        sceneView.addGestureRecognizer(tapGesture)
     }
     
     @objc
     func handleTap(_ gestureRecognize: UIGestureRecognizer) {
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
         
         // check what nodes are tapped
-        let p = gestureRecognize.location(in: scnView)
-        let hitResults = scnView.hitTest(p, options: [:])
+        let p = gestureRecognize.location(in: sceneView)
+        let hitResults = sceneView.hitTest(p, options: [:])
         // check that we clicked on at least one object
         if hitResults.count > 0 {
             // retrieved the first clicked object
@@ -101,21 +98,15 @@ class GameViewController: UIViewController {
             SCNTransaction.commit()
         }
     }
-    
+
+    /// Auto rotation
     override var shouldAutorotate: Bool {
         return true
     }
-    
+
+    /// Full screen
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
     }
 
 }

@@ -32,7 +32,7 @@ class SCNViewController: UIViewController, RenderView {
         // constraints
         view.addSubview(sceneView)
         sceneView.snp.makeConstraints { make in
-            make.top.bottom.left.right.equalTo(view)
+            make.edges.equalToSuperview()
         }
 
 

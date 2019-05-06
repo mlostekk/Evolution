@@ -6,5 +6,6 @@ target 'Evolution' do
   use_frameworks!
 
   # Pods for Evolution
+  pod 'SnapKit', '~> 5.0.0'
 
 end

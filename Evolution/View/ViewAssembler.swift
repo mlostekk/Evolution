@@ -6,10 +6,18 @@ import UIKit
 protocol ViewAssembler {
 
     /// Get the renderer
-    func resolve() -> Renderer
+    func resolve() -> RenderView
+
+    /// Get the controls view
+    func resolve() -> ControlsView
 }
 
 /// The interface for rendering
-protocol Renderer: UIViewController {
+protocol RenderView: UIViewController {
+
+}
+
+/// The interface for the controls
+protocol ControlsView: UIViewController {
 
 }

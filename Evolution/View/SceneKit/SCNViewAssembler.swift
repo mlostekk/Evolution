@@ -5,14 +5,14 @@ import Foundation
 /// The SceneKit specific assembler
 protocol SCNViewAssembler: ViewAssembler {
 
-    func resolve() -> Renderer
+    func resolve() -> RenderView
 }
 
 
 /// Implementation of the SceneKit specific assembler
 extension SCNViewAssembler where Self: Assembler {
 
-    func resolve() -> Renderer {
+    func resolve() -> RenderView {
         return SCNViewController()
     }
 }

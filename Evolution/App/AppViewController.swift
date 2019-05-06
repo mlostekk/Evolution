@@ -12,10 +12,13 @@ import SnapKit
 class AppViewController: UIViewController {
 
     /// Global assembler
-    private let assembler:            Assembler
+    private let assembler:              Assembler
 
     /// Main render view controller
-    private let renderViewController: Renderer
+    private let renderViewController:   RenderView
+
+    /// Controls view controller
+    private let controlsViewController: ControlsView
 
     /// Default constructor, shall not pass
     required init?(coder aDecoder: NSCoder) {
@@ -25,20 +28,32 @@ class AppViewController: UIViewController {
     /// Construction with dependency resolver
     init(assembler: Assembler) {
         self.assembler = assembler
+        self.controlsViewController = assembler.resolve()
         self.renderViewController = assembler.resolve()
         super.init(nibName: nil, bundle: nil)
     }
 
+    /// View did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        // add top view controller
-        renderViewController.willMove(toParent: self)
-        addChild(renderViewController)
-        view.addSubview(renderViewController.view)
-        renderViewController.view.snp.makeConstraints { make in
-            make.left.right.top.bottom.equalTo(view)
+        // add view controllers
+        add(subviewController: controlsViewController) { make in
+            make.left.bottom.right.equalTo(view)
+            make.height.equalTo(80)
         }
-        renderViewController.didMove(toParent: self)
+        add(subviewController: renderViewController) { make in
+            make.left.top.right.equalTo(view)
+            make.bottom.equalTo(controlsViewController.view.snp.top)
+        }
+    }
+
+    /// Convenience method to add sub view controller
+    private func add(subviewController: UIViewController, constraints: (_ make: ConstraintMaker) -> Void) {
+        subviewController.willMove(toParent: self)
+        addChild(subviewController)
+        view.addSubview(subviewController.view)
+        subviewController.view.snp.makeConstraints(constraints)
+        subviewController.didMove(toParent: self)
     }
 
     /// Auto rotation

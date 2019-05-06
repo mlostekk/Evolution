@@ -11,7 +11,7 @@ import QuartzCore
 import SceneKit
 import SnapKit
 
-class SCNViewController: UIViewController, Renderer {
+class SCNViewController: UIViewController, RenderView {
 
     let sceneView: SCNView = SCNView()
 
@@ -138,14 +138,5 @@ class SCNViewController: UIViewController, Renderer {
         }
     }
 
-    /// Auto rotation
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    /// Full screen
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
 
 }

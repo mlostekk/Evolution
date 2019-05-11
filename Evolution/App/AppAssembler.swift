@@ -4,7 +4,8 @@ import Foundation
 
 /// Global assembler aggregate
 protocol Assembler: SCNViewAssembler,
-                    SimpleControlsViewAssembler {
+                    SimpleControlsViewAssembler,
+                    SquareWorldAssembler{
 
 }
 

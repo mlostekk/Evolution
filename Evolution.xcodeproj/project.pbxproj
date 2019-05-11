@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44A4D1DE3B4C10A8E447C2B1 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DC398EA24A6E615BF666 /* Log.swift */; };
 		44A4D1E12337D2B3D71358F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D19C7DCBC1BBC0A9ED44 /* AppDelegate.swift */; };
 		44A4D269140C4EC60CFECC23 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D39C850D616870846BBE /* AppAssembler.swift */; };
 		44A4D26C859F9A8F63325E64 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB1FEF38AF85850BFAAA /* World.swift */; };
 		44A4D284E25DE1F953C4ED42 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */; };
+		44A4D2F4280665B95D29D76C /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF14D74E201E7A9B6B6B /* Views.swift */; };
+		44A4D3C85DD02472F2E8FC98 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D888CB731C416B523EBF /* Random.swift */; };
 		44A4D643358AEBF27A1122BD /* SCNViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */; };
+		44A4D793BF8A56C3DFD541BB /* WorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D218CD7EBA306711E8B4 /* WorldAssembler.swift */; };
+		44A4D880B591F00F8099942F /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDCB464FF18717758A3F /* Trait.swift */; };
 		44A4D9A9EBA5AC3DE4D6C1F8 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */; };
 		44A4D9BAD52F14FE343B610F /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DA436F2FB5B7AD47DE44 /* AppViewController.swift */; };
 		44A4DC4A2AE587F4EB799B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A4DBD871FD64D3BB1356CA /* Assets.xcassets */; };
+		44A4DDA6DC3ECAA9361CEB50 /* SquareWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DCB7FC36D2C9B03ECB2A /* SquareWorld.swift */; };
 		44A4DE2AA0501761140156BE /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D9C35C13CCE76972E9D0 /* Entity.swift */; };
 		44A4DE49B3E906455D3A0F07 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB1959EDCD4FAA3E002D /* SCNViewController.swift */; };
 		44A4DE71EABFEDC936FC2D40 /* ControlsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D2F8FD03E8CC59369393 /* ControlsViewAssembler.swift */; };
 		44A4DF0CF5F39F340F4A5CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A4D904716267409B398C4E /* LaunchScreen.storyboard */; };
+		44A4DF71D889C5D5AFA1CAA2 /* SquareWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D25882990D15648E66CA /* SquareWorldAssembler.swift */; };
 		4BF16EA143F45DD17E6459D5 /* Pods_Evolution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA3620CBCAF8A08BC039171 /* Pods_Evolution.framework */; };
 		DCCBC75E30A2F2E3CDC8D318 /* libPods-EvolutionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1B18C843940C5960FA93DF /* libPods-EvolutionTests.a */; };
 		E70F7B582280BCC900DEB73B /* EvolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F7B572280BCC900DEB73B /* EvolutionTests.swift */; };
@@ -38,17 +45,24 @@
 /* Begin PBXFileReference section */
 		0BD0F854CC784748996CE9AD /* Pods-EvolutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvolutionTests.debug.xcconfig"; path = "Target Support Files/Pods-EvolutionTests/Pods-EvolutionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44A4D19C7DCBC1BBC0A9ED44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44A4D218CD7EBA306711E8B4 /* WorldAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldAssembler.swift; sourceTree = "<group>"; };
+		44A4D25882990D15648E66CA /* SquareWorldAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWorldAssembler.swift; sourceTree = "<group>"; };
 		44A4D2F8FD03E8CC59369393 /* ControlsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D39C850D616870846BBE /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
 		44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
 		44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
+		44A4D888CB731C416B523EBF /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		44A4D904716267409B398C4E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A4D9C35C13CCE76972E9D0 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		44A4DA436F2FB5B7AD47DE44 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		44A4DB1959EDCD4FAA3E002D /* SCNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
 		44A4DB1FEF38AF85850BFAAA /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		44A4DBD871FD64D3BB1356CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44A4DC398EA24A6E615BF666 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		44A4DCB7FC36D2C9B03ECB2A /* SquareWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWorld.swift; sourceTree = "<group>"; };
 		44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewAssembler.swift; sourceTree = "<group>"; };
+		44A4DDCB464FF18717758A3F /* Trait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
+		44A4DF14D74E201E7A9B6B6B /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		70E650E8863C4A3133291069 /* Pods-Evolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution.release.xcconfig"; path = "Target Support Files/Pods-Evolution/Pods-Evolution.release.xcconfig"; sourceTree = "<group>"; };
 		9D1B18C843940C5960FA93DF /* libPods-EvolutionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EvolutionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2F4F7CA3F02A1636C40F78 /* Pods-Evolution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution.debug.xcconfig"; path = "Target Support Files/Pods-Evolution/Pods-Evolution.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +112,9 @@
 			children = (
 				44A4D9C35C13CCE76972E9D0 /* Entity.swift */,
 				44A4DB1FEF38AF85850BFAAA /* World.swift */,
+				44A4DDCB464FF18717758A3F /* Trait.swift */,
+				44A4D218CD7EBA306711E8B4 /* WorldAssembler.swift */,
+				44A4DCA0E87E96EC25DF8E2D /* SquareWorld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +144,7 @@
 				44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */,
 				44A4D728A9C3BB4994FA90DE /* SceneKit */,
 				44A4D7CDED17FFC045145ED4 /* Controls */,
+				44A4DF14D74E201E7A9B6B6B /* Views.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +156,24 @@
 				44A4D904716267409B398C4E /* LaunchScreen.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		44A4DCA0E87E96EC25DF8E2D /* SquareWorld */ = {
+			isa = PBXGroup;
+			children = (
+				44A4D25882990D15648E66CA /* SquareWorldAssembler.swift */,
+				44A4DCB7FC36D2C9B03ECB2A /* SquareWorld.swift */,
+			);
+			path = SquareWorld;
+			sourceTree = "<group>";
+		};
+		44A4DD38EB88F377BA9FA8BF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				44A4DC398EA24A6E615BF666 /* Log.swift */,
+				44A4D888CB731C416B523EBF /* Random.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		44A4DE830464B6797A131EB6 /* App */ = {
@@ -197,6 +233,7 @@
 				44A4DA0C5A274AEED710DCDA /* View */,
 				44A4DE830464B6797A131EB6 /* App */,
 				44A4DB436E6401064F3EF123 /* Assets */,
+				44A4DD38EB88F377BA9FA8BF /* Util */,
 			);
 			path = Evolution;
 			sourceTree = "<group>";
@@ -398,6 +435,13 @@
 				44A4DE71EABFEDC936FC2D40 /* ControlsViewAssembler.swift in Sources */,
 				44A4D9A9EBA5AC3DE4D6C1F8 /* ControlsViewController.swift in Sources */,
 				44A4D26C859F9A8F63325E64 /* World.swift in Sources */,
+				44A4D880B591F00F8099942F /* Trait.swift in Sources */,
+				44A4D1DE3B4C10A8E447C2B1 /* Log.swift in Sources */,
+				44A4D3C85DD02472F2E8FC98 /* Random.swift in Sources */,
+				44A4D793BF8A56C3DFD541BB /* WorldAssembler.swift in Sources */,
+				44A4DF71D889C5D5AFA1CAA2 /* SquareWorldAssembler.swift in Sources */,
+				44A4DDA6DC3ECAA9361CEB50 /* SquareWorld.swift in Sources */,
+				44A4D2F4280665B95D29D76C /* Views.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

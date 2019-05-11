@@ -13,6 +13,6 @@ protocol SCNViewAssembler: ViewAssembler {
 extension SCNViewAssembler where Self: Assembler {
 
     func resolve() -> RenderView {
-        return SCNViewController()
+        return SCNViewController(world: resolve())
     }
 }

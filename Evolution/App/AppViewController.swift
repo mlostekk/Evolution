@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 class AppViewController: UIViewController {
 
@@ -20,6 +21,12 @@ class AppViewController: UIViewController {
     /// Controls view controller
     private let controlsViewController: ControlsView
 
+    /// The world
+    private let world:                  World
+
+    /// Rx dispose bag
+    private let disposeBag:             DisposeBag = DisposeBag()
+
     /// Default constructor, shall not pass
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -30,6 +37,7 @@ class AppViewController: UIViewController {
         self.assembler = assembler
         self.controlsViewController = assembler.resolve()
         self.renderViewController = assembler.resolve()
+        self.world = assembler.resolve()
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -45,6 +53,8 @@ class AppViewController: UIViewController {
             make.left.top.right.equalTo(view)
             make.bottom.equalTo(controlsViewController.view.snp.top)
         }
+        // setup bindings
+        setupBindings()
     }
 
     /// Convenience method to add sub view controller
@@ -54,6 +64,19 @@ class AppViewController: UIViewController {
         view.addSubview(subviewController.view)
         subviewController.view.snp.makeConstraints(constraints)
         subviewController.didMove(toParent: self)
+    }
+
+    // Setup bindings
+    private func setupBindings() {
+        controlsViewController.resetButtonStream.subscribe(onNext: {
+            self.world.reset()
+        }).disposed(by: disposeBag)
+        controlsViewController.stepButtonStream.subscribe(onNext: {
+            self.world.tick()
+        }).disposed(by: disposeBag)
+        controlsViewController.settingsButtonStream.subscribe(onNext: {
+            // TODO: implement
+        }).disposed(by: disposeBag)
     }
 
     /// Auto rotation

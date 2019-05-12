@@ -7,17 +7,11 @@ import RxSwift
 /// Base entity that does evolution
 class Entity {
 
-    let positionStream: PublishSubject<CGPoint> = PublishSubject<CGPoint>()
-
     /// The entities position
-    var position:       CGPoint             = .zero {
-        didSet {
-            positionStream.onNext(position)
-        }
-    }
+    var position:       CGPoint  = .zero
 
     /// The entities current movement vector
-    var movementVector: CGVector            = .zero
+    var movementVector: CGVector = .zero
 
     /// Movement speed
     let speed:          Double

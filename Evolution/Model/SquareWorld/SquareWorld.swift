@@ -7,29 +7,18 @@ import RxSwift
 class SquareWorld: World {
 
     /// The array of all entities
-    private var entities: [Entity] = [] {
-        didSet {
-            entitySubject.onNext(entities)
-        }
-    }
+    private var entities:      [Entity]                 = []
 
-    /// Internal subject with all entities
-    let entitySubject:  PublishSubject<[Entity]> = PublishSubject<[Entity]>()
-    var entitiesStream: Observable<[Entity]> {
-        return entitySubject
-    }
+    /// Subject and stream with all entities
+    private let entitySubject: PublishSubject<Entity> = PublishSubject<Entity>()
+    var entityStream: Observable<Entity> { return entitySubject }
 
     /// Reset to initial state
     func reset() {
         // Set entities
-        var newEntities: [Entity] = []
+        entities = []
         for _ in 1...10 {
             let entity = Entity(1, 20)
-            newEntities.append(entity)
-        }
-        // Randomized distribution
-        // TODO: optimize
-        newEntities.forEach { entity in
             let side   = random(4)
             let amount = random(100)
             if side == 0 {
@@ -41,9 +30,10 @@ class SquareWorld: World {
             } else if side == 3 {
                 entity.position = CGPoint(x: amount - 50, y: -50)
             }
+            entities.append(entity)
+            // emit
+            entitySubject.onNext(entity)
         }
-        // set
-        entities = newEntities
     }
 
     /// Simulate world one tick

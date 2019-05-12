@@ -13,7 +13,7 @@ protocol World {
     func tick()
 
     /// The stream with all entities
-    var entitiesStream: Observable<[Entity]> { get }
+    var entityStream: Observable<Entity> { get }
 }
 
 /// Config struct

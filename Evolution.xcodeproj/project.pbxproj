@@ -14,7 +14,10 @@
 		44A4D284E25DE1F953C4ED42 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */; };
 		44A4D2F4280665B95D29D76C /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF14D74E201E7A9B6B6B /* Views.swift */; };
 		44A4D3C85DD02472F2E8FC98 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D888CB731C416B523EBF /* Random.swift */; };
+		44A4D4CA915A2085F2543B8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D8D376FAD66C23FA190D /* Food.swift */; };
+		44A4D52274AD3FD17BFF7A2C /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DD78E8EED025529F6AF1 /* FoodNode.swift */; };
 		44A4D643358AEBF27A1122BD /* SCNViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */; };
+		44A4D77A4A8C190F152EE5E3 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D6215296EA45968B93BC /* EntityNode.swift */; };
 		44A4D793BF8A56C3DFD541BB /* WorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D218CD7EBA306711E8B4 /* WorldAssembler.swift */; };
 		44A4D880B591F00F8099942F /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDCB464FF18717758A3F /* Trait.swift */; };
 		44A4D9A9EBA5AC3DE4D6C1F8 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */; };
@@ -24,7 +27,6 @@
 		44A4DE2AA0501761140156BE /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D9C35C13CCE76972E9D0 /* Entity.swift */; };
 		44A4DE49B3E906455D3A0F07 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB1959EDCD4FAA3E002D /* SCNViewController.swift */; };
 		44A4DE71EABFEDC936FC2D40 /* ControlsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D2F8FD03E8CC59369393 /* ControlsViewAssembler.swift */; };
-		44A4DEECB1515C9FD5AD0259 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D9D0BE29507D6C4C4004 /* EntityNode.swift */; };
 		44A4DF0CF5F39F340F4A5CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A4D904716267409B398C4E /* LaunchScreen.storyboard */; };
 		44A4DF71D889C5D5AFA1CAA2 /* SquareWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D25882990D15648E66CA /* SquareWorldAssembler.swift */; };
 		4BF16EA143F45DD17E6459D5 /* Pods_Evolution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA3620CBCAF8A08BC039171 /* Pods_Evolution.framework */; };
@@ -51,17 +53,19 @@
 		44A4D2F8FD03E8CC59369393 /* ControlsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D39C850D616870846BBE /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
 		44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
+		44A4D6215296EA45968B93BC /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D888CB731C416B523EBF /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		44A4D8D376FAD66C23FA190D /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		44A4D904716267409B398C4E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A4D9C35C13CCE76972E9D0 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		44A4D9D0BE29507D6C4C4004 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		44A4DA436F2FB5B7AD47DE44 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		44A4DB1959EDCD4FAA3E002D /* SCNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
 		44A4DB1FEF38AF85850BFAAA /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		44A4DBD871FD64D3BB1356CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A4DC398EA24A6E615BF666 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		44A4DCB7FC36D2C9B03ECB2A /* SquareWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWorld.swift; sourceTree = "<group>"; };
+		44A4DD78E8EED025529F6AF1 /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
 		44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewAssembler.swift; sourceTree = "<group>"; };
 		44A4DDCB464FF18717758A3F /* Trait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
 		44A4DF14D74E201E7A9B6B6B /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				44A4DDCB464FF18717758A3F /* Trait.swift */,
 				44A4D218CD7EBA306711E8B4 /* WorldAssembler.swift */,
 				44A4DCA0E87E96EC25DF8E2D /* SquareWorld */,
+				44A4D8D376FAD66C23FA190D /* Food.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,7 +132,7 @@
 				E76A8FCD227E2E8200EEE94F /* Assets.scnassets */,
 				44A4DB1959EDCD4FAA3E002D /* SCNViewController.swift */,
 				44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */,
-				44A4D9D0BE29507D6C4C4004 /* EntityNode.swift */,
+				44A4D96400D51BB499FFC57D /* Nodes */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -139,6 +144,15 @@
 				44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		44A4D96400D51BB499FFC57D /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				44A4D6215296EA45968B93BC /* EntityNode.swift */,
+				44A4DD78E8EED025529F6AF1 /* FoodNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 		44A4DA0C5A274AEED710DCDA /* View */ = {
@@ -445,7 +459,9 @@
 				44A4DF71D889C5D5AFA1CAA2 /* SquareWorldAssembler.swift in Sources */,
 				44A4DDA6DC3ECAA9361CEB50 /* SquareWorld.swift in Sources */,
 				44A4D2F4280665B95D29D76C /* Views.swift in Sources */,
-				44A4DEECB1515C9FD5AD0259 /* EntityNode.swift in Sources */,
+				44A4D4CA915A2085F2543B8A /* Food.swift in Sources */,
+				44A4D77A4A8C190F152EE5E3 /* EntityNode.swift in Sources */,
+				44A4D52274AD3FD17BFF7A2C /* FoodNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

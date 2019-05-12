@@ -14,6 +14,9 @@ protocol World {
 
     /// The stream with all entities
     var entityStream: Observable<Entity> { get }
+
+    /// The stream with all entities
+    var foodStream: Observable<Food> { get }
 }
 
 /// Config struct

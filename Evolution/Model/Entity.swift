@@ -2,16 +2,15 @@
 
 import Foundation
 import UIKit
-import RxSwift
 
 /// Base entity that does evolution
 class Entity {
 
     /// The entities position
-    var position:       CGPoint  = .zero
+    var position:       Vector3 = .zero
 
     /// The entities current movement vector
-    var movementVector: CGVector = .zero
+    var movementVector: Vector3 = .zero
 
     /// Movement speed
     let speed:          Double

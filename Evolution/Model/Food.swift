@@ -8,10 +8,10 @@ import RxSwift
 class Food {
 
     /// The entities position
-    let position: CGPoint
+    let position: Vector3
 
     /// Construction
-    init(_ position: CGPoint) {
+    init(_ position: Vector3) {
         self.position = position
     }
 }

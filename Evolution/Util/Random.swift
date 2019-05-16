@@ -11,3 +11,8 @@ func random(_ n: Int) -> Int {
 func random(_ m: Int, _ n: Int) -> Int {
     return Int(arc4random_uniform(UInt32(n - m))) + m
 }
+
+/// Get random number between m...n-1
+func random(_ m: Int, _ n: Int) -> Float {
+    return Float(Int(arc4random_uniform(UInt32(n - m))) + m)
+}

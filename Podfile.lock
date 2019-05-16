@@ -12,11 +12,11 @@ PODS:
   - SnapKit (5.0.0)
 
 DEPENDENCIES:
-  - RxBlocking (~> 5)
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
-  - RxTest (~> 5)
-  - SnapKit (~> 5.0.0)
+  - RxBlocking
+  - RxCocoa
+  - RxSwift
+  - RxTest
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   RxTest: 4349afe98f564e0a9bc19063368904622d17d49a
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: b36ff3e6795277a0c1b6f6841a7838c6f618fdd4
+PODFILE CHECKSUM: ed6354ddd17e8889bf09f843f9fecdbef4c50020
 
 COCOAPODS: 1.6.1

@@ -15,7 +15,6 @@
 		44A4D2F4280665B95D29D76C /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF14D74E201E7A9B6B6B /* Views.swift */; };
 		44A4D3C85DD02472F2E8FC98 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D888CB731C416B523EBF /* Random.swift */; };
 		44A4D4CA915A2085F2543B8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D8D376FAD66C23FA190D /* Food.swift */; };
-		44A4D50AF5852AF20F01F71A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D519524CE9E5DB93DC80 /* Math.swift */; };
 		44A4D52274AD3FD17BFF7A2C /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DD78E8EED025529F6AF1 /* FoodNode.swift */; };
 		44A4D643358AEBF27A1122BD /* SCNViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDA40322D9E64AE453F8 /* SCNViewAssembler.swift */; };
 		44A4D77A4A8C190F152EE5E3 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D6215296EA45968B93BC /* EntityNode.swift */; };
@@ -34,6 +33,11 @@
 		DCCBC75E30A2F2E3CDC8D318 /* libPods-EvolutionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1B18C843940C5960FA93DF /* libPods-EvolutionTests.a */; };
 		E70F7B582280BCC900DEB73B /* EvolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F7B572280BCC900DEB73B /* EvolutionTests.swift */; };
 		E76A8FCE227E2E8200EEE94F /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E76A8FCD227E2E8200EEE94F /* Assets.scnassets */; };
+		E7BFF75D228B6F3000AD5FE1 /* VectorMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFF75A228B6F3000AD5FE1 /* VectorMathTests.swift */; };
+		E7BFF75E228B6F3000AD5FE1 /* QuartzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFF75B228B6F3000AD5FE1 /* QuartzTests.swift */; };
+		E7BFF764228B6F4800AD5FE1 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFF761228B6F4800AD5FE1 /* VectorMath.swift */; };
+		E7BFF765228B6F4800AD5FE1 /* VectorMath+Quartz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFF762228B6F4800AD5FE1 /* VectorMath+Quartz.swift */; };
+		E7BFF766228B6F4800AD5FE1 /* VectorMath+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFF763228B6F4800AD5FE1 /* VectorMath+SceneKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,6 @@
 		44A4D2F8FD03E8CC59369393 /* ControlsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D39C850D616870846BBE /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
 		44A4D4E6BA4B958DC72C01A5 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
-		44A4D519524CE9E5DB93DC80 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		44A4D6215296EA45968B93BC /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		44A4D82C6CD0AD9F587419A4 /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D888CB731C416B523EBF /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
@@ -80,6 +83,11 @@
 		E70F7B572280BCC900DEB73B /* EvolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionTests.swift; sourceTree = "<group>"; };
 		E70F7B592280BCC900DEB73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76A8FCD227E2E8200EEE94F /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
+		E7BFF75A228B6F3000AD5FE1 /* VectorMathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VectorMathTests.swift; path = Submodules/VectorMath/Tests/VectorMathTests/VectorMathTests.swift; sourceTree = SOURCE_ROOT; };
+		E7BFF75B228B6F3000AD5FE1 /* QuartzTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuartzTests.swift; path = Submodules/VectorMath/Tests/VectorMathTests/QuartzTests.swift; sourceTree = SOURCE_ROOT; };
+		E7BFF761228B6F4800AD5FE1 /* VectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VectorMath.swift; path = Submodules/VectorMath/VectorMath/VectorMath.swift; sourceTree = SOURCE_ROOT; };
+		E7BFF762228B6F4800AD5FE1 /* VectorMath+Quartz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "VectorMath+Quartz.swift"; path = "Submodules/VectorMath/VectorMath/VectorMath+Quartz.swift"; sourceTree = SOURCE_ROOT; };
+		E7BFF763228B6F4800AD5FE1 /* VectorMath+SceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "VectorMath+SceneKit.swift"; path = "Submodules/VectorMath/VectorMath/VectorMath+SceneKit.swift"; sourceTree = SOURCE_ROOT; };
 		E7DAF8FD227CD6B900FC0FD6 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DAF90E227CD6BB00FC0FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +185,13 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		44A4DBBBF79101D785C65199 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		44A4DCA0E87E96EC25DF8E2D /* SquareWorld */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +206,6 @@
 			children = (
 				44A4DC398EA24A6E615BF666 /* Log.swift */,
 				44A4D888CB731C416B523EBF /* Random.swift */,
-				44A4D519524CE9E5DB93DC80 /* Math.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -218,10 +232,30 @@
 		E70F7B562280BCC900DEB73B /* EvolutionTests */ = {
 			isa = PBXGroup;
 			children = (
+				E7BFF759228B6F1E00AD5FE1 /* VectorMath */,
 				E70F7B572280BCC900DEB73B /* EvolutionTests.swift */,
 				E70F7B592280BCC900DEB73B /* Info.plist */,
 			);
 			path = EvolutionTests;
+			sourceTree = "<group>";
+		};
+		E7BFF759228B6F1E00AD5FE1 /* VectorMath */ = {
+			isa = PBXGroup;
+			children = (
+				E7BFF75B228B6F3000AD5FE1 /* QuartzTests.swift */,
+				E7BFF75A228B6F3000AD5FE1 /* VectorMathTests.swift */,
+			);
+			name = VectorMath;
+			sourceTree = "<group>";
+		};
+		E7BFF760228B6F3700AD5FE1 /* VectorMath */ = {
+			isa = PBXGroup;
+			children = (
+				E7BFF761228B6F4800AD5FE1 /* VectorMath.swift */,
+				E7BFF762228B6F4800AD5FE1 /* VectorMath+Quartz.swift */,
+				E7BFF763228B6F4800AD5FE1 /* VectorMath+SceneKit.swift */,
+			);
+			name = VectorMath;
 			sourceTree = "<group>";
 		};
 		E7DAF8F4227CD6B900FC0FD6 = {
@@ -254,6 +288,8 @@
 				44A4DE830464B6797A131EB6 /* App */,
 				44A4DB436E6401064F3EF123 /* Assets */,
 				44A4DD38EB88F377BA9FA8BF /* Util */,
+				44A4DBBBF79101D785C65199 /* Extension */,
+				E7BFF760228B6F3700AD5FE1 /* VectorMath */,
 			);
 			path = Evolution;
 			sourceTree = "<group>";
@@ -437,6 +473,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BFF75E228B6F3000AD5FE1 /* QuartzTests.swift in Sources */,
+				E7BFF75D228B6F3000AD5FE1 /* VectorMathTests.swift in Sources */,
 				E70F7B582280BCC900DEB73B /* EvolutionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BFF766228B6F4800AD5FE1 /* VectorMath+SceneKit.swift in Sources */,
 				44A4DE2AA0501761140156BE /* Entity.swift in Sources */,
 				44A4D1E12337D2B3D71358F7 /* AppDelegate.swift in Sources */,
 				44A4D9BAD52F14FE343B610F /* AppViewController.swift in Sources */,
@@ -452,6 +491,7 @@
 				44A4D284E25DE1F953C4ED42 /* ViewAssembler.swift in Sources */,
 				44A4DE49B3E906455D3A0F07 /* SCNViewController.swift in Sources */,
 				44A4D643358AEBF27A1122BD /* SCNViewAssembler.swift in Sources */,
+				E7BFF764228B6F4800AD5FE1 /* VectorMath.swift in Sources */,
 				44A4DE71EABFEDC936FC2D40 /* ControlsViewAssembler.swift in Sources */,
 				44A4D9A9EBA5AC3DE4D6C1F8 /* ControlsViewController.swift in Sources */,
 				44A4D26C859F9A8F63325E64 /* World.swift in Sources */,
@@ -463,9 +503,9 @@
 				44A4DDA6DC3ECAA9361CEB50 /* SquareWorld.swift in Sources */,
 				44A4D2F4280665B95D29D76C /* Views.swift in Sources */,
 				44A4D4CA915A2085F2543B8A /* Food.swift in Sources */,
+				E7BFF765228B6F4800AD5FE1 /* VectorMath+Quartz.swift in Sources */,
 				44A4D77A4A8C190F152EE5E3 /* EntityNode.swift in Sources */,
 				44A4D52274AD3FD17BFF7A2C /* FoodNode.swift in Sources */,
-				44A4D50AF5852AF20F01F71A /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

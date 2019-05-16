@@ -12,7 +12,7 @@ class SquareWorld: World {
     private var food:          [Food]                 = []
 
     /// Bounds
-    private let dimension                             = 50
+    private let dimension:     Float                  = 50.0
 
     /// Subject and stream with all entities
     private let entitySubject: PublishSubject<Entity> = PublishSubject<Entity>()
@@ -24,28 +24,31 @@ class SquareWorld: World {
 
     /// Reset to initial state
     func reset() {
-        // Set entities
+        // Create entities
         entities = []
         for _ in 1...10 {
             let entity = Entity(1, 20)
             let side   = random(4)
-            let amount = random(100)
+            let amount = Float(random(100))
             if side == 0 {
-                entity.position = CGPoint(x: -dimension, y: amount - dimension)
+                entity.position = Vector3(-dimension, amount - dimension, 0)
             } else if side == 1 {
-                entity.position = CGPoint(x: amount - dimension, y: dimension)
+                entity.position = Vector3(amount - dimension, dimension, 0)
             } else if side == 2 {
-                entity.position = CGPoint(x: dimension, y: amount - dimension)
+                entity.position = Vector3(dimension, amount - dimension, 0)
             } else if side == 3 {
-                entity.position = CGPoint(x: amount - dimension, y: -dimension)
+                entity.position = Vector3(amount - dimension, -dimension, 0)
             }
+            entity.movementVector = Vector3.zero - entity.position
             entities.append(entity)
             // emit
             entitySubject.onNext(entity)
         }
+        // Create food
         for _ in 1...10 {
-            let newFood = Food(CGPoint(x: random(-dimension, dimension),
-                                       y: random(-dimension, dimension)))
+            let newFood = Food(Vector3(random(Int(-dimension), Int(dimension)),
+                                       random(Int(-dimension), Int(dimension)),
+                                       0))
 
             food.append(newFood)
             // emit

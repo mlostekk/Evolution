@@ -6,13 +6,12 @@ target 'Evolution' do
   use_frameworks!
 
   # Pods for Evolution
-  pod 'SnapKit', '~> 5.0.0'
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
-
+  pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 target 'EvolutionTests' do
-  pod 'RxBlocking', '~> 5'
-  pod 'RxTest', '~> 5'
+  pod 'RxBlocking'
+  pod 'RxTest'
 end

@@ -1,0 +1,3 @@
+[submodule "Submodules/VectorMath"]
+	path = Submodules/VectorMath
+	url = git@github.com:mlostekk/VectorMath.git

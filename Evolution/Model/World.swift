@@ -12,10 +12,10 @@ protocol World {
     /// Simulate one tick
     func tick()
 
-    /// The stream with all entities
+    /// The stream with new entities
     var entityStream: Observable<Entity> { get }
 
-    /// The stream with all entities
+    /// The stream with new food
     var foodStream: Observable<Food> { get }
 }
 

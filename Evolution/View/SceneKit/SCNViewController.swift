@@ -6,12 +6,21 @@
 //  Copyright © 2019 Nomad5. All rights reserved.
 //
 
-import UIKit
+
 import QuartzCore
 import SceneKit
 import SnapKit
 import RxSwift
 
+class SCNViewController: RenderView {
+    required init(world: World) {
+        
+    }
+
+    
+}
+
+/*
 class SCNViewController: UIViewController, RenderView {
 
     let sceneView: SCNView = SCNView()
@@ -158,3 +167,4 @@ class SCNViewController: UIViewController, RenderView {
 
 
 }
+*/

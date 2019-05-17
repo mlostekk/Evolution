@@ -20,7 +20,7 @@ class FoodNode: SCNNode {
         super.init()
         self.geometry = SCNSphere(radius: 1)
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.blue
+        //material.diffuse.contents = UIColor.blue
         self.geometry?.materials = [material]
         self.position = SCNVector3(food.position.x, 0, food.position.y)
     }

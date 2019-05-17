@@ -1,6 +1,6 @@
 // Copyright (c) 2019 Nomad5. All rights reserved.
 
-import UIKit
+
 import RxSwift
 
 /// Global instance of the world

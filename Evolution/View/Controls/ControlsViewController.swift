@@ -6,12 +6,31 @@
 //  Copyright © 2019 Nomad5. All rights reserved.
 //
 
-import UIKit
+
 import QuartzCore
 import SceneKit
 import SnapKit
 import RxSwift
 import RxCocoa
+
+class ControlsViewController: ControlsView {
+    var stepButtonStream: Observable<Void>
+
+    var resetButtonStream: Observable<Void>
+
+    var settingsButtonStream: Observable<Void>
+
+    /// Construction with dependencies
+    init() {
+        stepButtonStream = PublishSubject()
+        resetButtonStream = PublishSubject()
+        settingsButtonStream = PublishSubject()
+        //super.init(nibName: nil, bundle: nil)
+    }
+
+}
+/*
+
 
 class ControlsViewController: UIViewController, ControlsView {
 
@@ -72,3 +91,4 @@ class ControlsViewController: UIViewController, ControlsView {
     }
 
 }
+*/

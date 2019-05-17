@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RxSwift
 
+/*
 class AppViewController: UIViewController {
 
     /// Global assembler
@@ -90,3 +91,4 @@ class AppViewController: UIViewController {
     }
 
 }
+*/

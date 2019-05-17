@@ -1,10 +1,9 @@
 // Copyright (c) 2019 Nomad5. All rights reserved.
 
-import UIKit
 import RxSwift
 
 /// The interface for rendering
-protocol RenderView: UIViewController {
+protocol RenderView {
 
     /// Construct with dependencies
     init(world: World)
@@ -12,7 +11,7 @@ protocol RenderView: UIViewController {
 }
 
 /// The interface for the controls
-protocol ControlsView: UIViewController {
+protocol ControlsView {
 
     /// Step button tap observable
     var stepButtonStream:     Observable<Void> { get }

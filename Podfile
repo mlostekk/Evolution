@@ -1,17 +1,23 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '12.2'
 
-target 'Evolution' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+def import_pods
   use_frameworks!
-
-  # Pods for Evolution
   pod 'SnapKit'
   pod 'RxSwift'
   pod 'RxCocoa'
 end
 
-target 'EvolutionTests' do
-  pod 'RxBlocking'
-  pod 'RxTest'
+target 'Evolution iOS' do
+  platform :ios, '10.0'
+  import_pods
 end
+
+target 'Evolution macOS' do
+  platform :osx, '10.14'
+  import_pods
+end
+
+#target 'EvolutionTests' do
+#  pod 'RxBlocking'
+#  pod 'RxTest'
+#end

@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Evolution macOS
-//
-//  Created by Martin Mlostek on 16.05.19.
 //  Copyright © 2019 Nomad5. All rights reserved.
-//
 
 import Cocoa
 

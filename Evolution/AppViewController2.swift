@@ -1,10 +1,5 @@
-//
-//  AppViewController2.swift
-//  Evolution
-//
-//  Created by Martin Mlostek on 03.05.19.
 //  Copyright © 2019 Nomad5. All rights reserved.
-//
+
 
 import UIKit
 import SnapKit

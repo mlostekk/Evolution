@@ -14,7 +14,7 @@ protocol MainViewAssembler {
 extension MainViewAssembler where Self: Assembler {
 
     func resolve() -> MainViewProtocol {
-        return GameController()
+        return SceneKitController()
     }
 }
 

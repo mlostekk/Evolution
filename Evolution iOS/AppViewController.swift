@@ -1,14 +1,8 @@
-//
-//  AppViewController.swift
-//  Evolution iOS
-//
-//  Created by Martin Mlostek on 16.05.19.
 //  Copyright © 2019 Nomad5. All rights reserved.
-//
 
 import UIKit
-import SceneKit
 
+/// The main app view controller
 class AppViewController: UIViewController {
 
     /// The main controller
@@ -29,43 +23,46 @@ class AppViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    /// View is ready to be filled with sizing relevant stuff
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // create main render view
-        let v = mainController.initializeWith(size: self.view.frame.size)
-        self.view.addSubview(v)
+        let mainView = mainController.initializeWith(size: self.view.frame.size)
+        self.view.addSubview(mainView)
 
         // Add a tap gesture recognizer
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        var gestureRecognizers = v.gestureRecognizers ?? []
+        let tapGesture         = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        var gestureRecognizers = mainView.gestureRecognizers ?? []
         gestureRecognizers.insert(tapGesture, at: 0)
-        v.gestureRecognizers = gestureRecognizers
+        mainView.gestureRecognizers = gestureRecognizers
     }
 
-    @objc
-    func handleTap(_ gestureRecognizer: UIGestureRecognizer) {
+    /// Handle tap
+    @objc func handleTap(_ gestureRecognizer: UIGestureRecognizer) {
         // Highlight the clicked nodes
-        let v = mainController.getView()
-        let p = gestureRecognizer.location(in: v)
-        mainController.highlightNodes(atPoint: p)
-
+        let mainView = mainController.getView()
+        let point    = gestureRecognizer.location(in: mainView)
+        mainController.highlightNodes(atPoint: point)
     }
-    
-    override var shouldAutorotate: Bool {
+
+    /// Fullscreen
+    override var prefersStatusBarHidden:         Bool {
         return true
     }
-    
+
+    /// Should automatically rotate
+    override var shouldAutorotate:               Bool {
+        return true
+    }
+
+    /// Orientation locks
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
         } else {
             return .all
         }
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
 }

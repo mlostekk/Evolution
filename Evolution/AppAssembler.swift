@@ -14,7 +14,7 @@ protocol Assembler: SCNViewAssembler,
 class AppAssembler: Assembler {
 
     func resolve() -> MainViewProtocol {
-        return GameController()
+        return SceneKitController()
     }
 
 }

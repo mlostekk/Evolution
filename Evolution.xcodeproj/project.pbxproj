@@ -18,8 +18,8 @@
 		E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* AppViewController.swift */; };
 		E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBC228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBE228E05570002E7E4 /* AppViewController.swift */; };
-		E71C7BC4228E05570002E7E4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* GameController.swift */; };
-		E71C7BC5228E05570002E7E4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* GameController.swift */; };
+		E71C7BC4228E05570002E7E4 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* SceneKitController.swift */; };
+		E71C7BC5228E05570002E7E4 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* SceneKitController.swift */; };
 		E71C7BC8228E05570002E7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BA4228E05570002E7E4 /* Assets.xcassets */; };
 		E71C7BC9228E05570002E7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BA4228E05570002E7E4 /* Assets.xcassets */; };
 		E71C7BD3228E089E0002E7E4 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD1228E089E0002E7E4 /* Random.swift */; };
@@ -90,7 +90,7 @@
 		D24776F29C00EEC75C8FC438 /* Pods_Evolution_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D437A6D0645B8821274305DE /* Pods-EvolutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvolutionTests.release.xcconfig"; path = "Target Support Files/Pods-EvolutionTests/Pods-EvolutionTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7034ABB228F5BDF00D28CBB /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
-		E71C7BA2228E05560002E7E4 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		E71C7BA2228E05560002E7E4 /* SceneKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitController.swift; sourceTree = "<group>"; };
 		E71C7BA4228E05570002E7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71C7BA9228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C7BAB228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */,
-				E71C7BA2228E05560002E7E4 /* GameController.swift */,
+				E71C7BA2228E05560002E7E4 /* SceneKitController.swift */,
 				E71C7BA4228E05570002E7E4 /* Assets.xcassets */,
 				E71C7BD7228E08AD0002E7E4 /* Model */,
 				E71C7BD0228E089E0002E7E4 /* Util */,
@@ -544,7 +544,7 @@
 				E71C7C2B228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */,
 				E71C7BE4228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
 				E71C7BE2228E08AD0002E7E4 /* Trait.swift in Sources */,
-				E71C7BC4228E05570002E7E4 /* GameController.swift in Sources */,
+				E71C7BC4228E05570002E7E4 /* SceneKitController.swift in Sources */,
 				E71C7C29228E0B280002E7E4 /* ControlsViewController.swift in Sources */,
 				E71C7BFF228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF7228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
@@ -578,7 +578,7 @@
 				E71C7C2C228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */,
 				E71C7BE5228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
 				E71C7BE3228E08AD0002E7E4 /* Trait.swift in Sources */,
-				E71C7BC5228E05570002E7E4 /* GameController.swift in Sources */,
+				E71C7BC5228E05570002E7E4 /* SceneKitController.swift in Sources */,
 				E71C7C2A228E0B280002E7E4 /* ControlsViewController.swift in Sources */,
 				E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF8228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,

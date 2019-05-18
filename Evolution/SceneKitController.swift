@@ -1,19 +1,17 @@
-//
-//  GameController.swift
-//  Evolution Shared
-//
-//  Created by Martin Mlostek on 16.05.19.
 //  Copyright © 2019 Nomad5. All rights reserved.
-//
 
 import SceneKit
 
+/// The Scenekit controller
+class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
 
-class GameController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
-
+    /// The main view
     var view:  SCNView
+    
+    /// The scene
     var scene: SCNScene?
 
+    /// Construction with dependenceis
     override init() {
         self.view = SCNView(frame: .zero)
         super.init()

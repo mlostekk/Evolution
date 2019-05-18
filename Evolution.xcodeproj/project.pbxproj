@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		37C96C40C8B29CE38C835910 /* Pods_Evolution_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */; };
+		44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
+		44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
+		44A4DA0F6C52B97F19B5270A /* AppViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */; };
+		44A4DA805F70C1DC48B72AAB /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
+		44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
 		454315B3C5D5A09AC84B0D36 /* Pods_Evolution_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */; };
 		E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAB228E05570002E7E4 /* AppDelegate.swift */; };
-		E71C7BAE228E05570002E7E4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* GameViewController.swift */; };
+		E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* AppViewController.swift */; };
 		E71C7BB4228E05570002E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BB2228E05570002E7E4 /* LaunchScreen.storyboard */; };
-		E71C7BBD228E05570002E7E4 /* MacAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBC228E05570002E7E4 /* MacAppDelegate.swift */; };
+		E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBC228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBE228E05570002E7E4 /* AppViewController.swift */; };
 		E71C7BC4228E05570002E7E4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* GameController.swift */; };
 		E71C7BC5228E05570002E7E4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* GameController.swift */; };
@@ -62,8 +67,6 @@
 		E71C7C3A228E0B510002E7E4 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C37228E0B510002E7E4 /* Views.swift */; };
 		E71C7C3B228E0B510002E7E4 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */; };
 		E71C7C3C228E0B510002E7E4 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */; };
-		E71C7C3E228E0B660002E7E4 /* AppDelegate Kopie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C3D228E0B660002E7E4 /* AppDelegate Kopie.swift */; };
-		E71C7C40228E0B6E0002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C3F228E0B6E0002E7E4 /* AppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		3DFB49DC408054F4B3EC70CB /* Pods-Evolution-Evolution iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution iOS.release.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution iOS/Pods-Evolution-Evolution iOS.release.xcconfig"; sourceTree = "<group>"; };
 		3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B9346CC52B5D74EE9BE7AF /* Pods-Evolution-Evolution macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution macOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution macOS/Pods-Evolution-Evolution macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		44A4D38B206BF336E3B75378 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController2.swift; sourceTree = "<group>"; };
+		44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewAssembler.swift; sourceTree = "<group>"; };
 		5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706824908A592725EF6FB2 /* Pods_Evolution_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E650E8863C4A3133291069 /* Pods-Evolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution.release.xcconfig"; path = "Target Support Files/Pods-Evolution/Pods-Evolution.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,11 +95,11 @@
 		E71C7BA4228E05570002E7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71C7BA9228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C7BAB228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E71C7BAD228E05570002E7E4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E71C7BAD228E05570002E7E4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E71C7BB3228E05570002E7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71C7BB5228E05570002E7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E71C7BBA228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E71C7BBC228E05570002E7E4 /* MacAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppDelegate.swift; sourceTree = "<group>"; };
+		E71C7BBC228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E71C7BBE228E05570002E7E4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E71C7BC3228E05570002E7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E71C7BD1228E089E0002E7E4 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
@@ -118,8 +124,6 @@
 		E71C7C28228E0B280002E7E4 /* SCNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
 		E71C7C37228E0B510002E7E4 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
-		E71C7C3D228E0B660002E7E4 /* AppDelegate Kopie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate Kopie.swift"; sourceTree = "<group>"; };
-		E71C7C3F228E0B6E0002E7E4 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E7E0D7EF74061E0667ACA7BE /* Pods-Evolution iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution iOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution iOS/Pods-Evolution iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +201,9 @@
 				E71C7BD0228E089E0002E7E4 /* Util */,
 				E71C7BF1228E09400002E7E4 /* VectorMath */,
 				44A4DDCE0C5C7A77B044DFB2 /* View */,
+				44A4D38B206BF336E3B75378 /* CommonTypes.swift */,
+				44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */,
+				44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */,
 			);
 			path = Evolution;
 			sourceTree = "<group>";
@@ -204,10 +211,8 @@
 		E71C7BAA228E05570002E7E4 /* Evolution iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E71C7C3F228E0B6E0002E7E4 /* AppViewController.swift */,
-				E71C7C3D228E0B660002E7E4 /* AppDelegate Kopie.swift */,
 				E71C7BAB228E05570002E7E4 /* AppDelegate.swift */,
-				E71C7BAD228E05570002E7E4 /* GameViewController.swift */,
+				E71C7BAD228E05570002E7E4 /* AppViewController.swift */,
 				E71C7BB2228E05570002E7E4 /* LaunchScreen.storyboard */,
 				E71C7BB5228E05570002E7E4 /* Info.plist */,
 			);
@@ -217,7 +222,7 @@
 		E71C7BBB228E05570002E7E4 /* Evolution macOS */ = {
 			isa = PBXGroup;
 			children = (
-				E71C7BBC228E05570002E7E4 /* MacAppDelegate.swift */,
+				E71C7BBC228E05570002E7E4 /* AppDelegate.swift */,
 				E71C7BBE228E05570002E7E4 /* AppViewController.swift */,
 				E71C7BC3228E05570002E7E4 /* Info.plist */,
 			);
@@ -525,11 +530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71C7C3E228E0B660002E7E4 /* AppDelegate Kopie.swift in Sources */,
 				E71C7BEA228E08AD0002E7E4 /* Food.swift in Sources */,
-				E71C7C40228E0B6E0002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BD3228E089E0002E7E4 /* Random.swift in Sources */,
-				E71C7BAE228E05570002E7E4 /* GameViewController.swift in Sources */,
+				E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BF5228E09400002E7E4 /* VectorMath.swift in Sources */,
 				E71C7C39228E0B510002E7E4 /* Views.swift in Sources */,
 				E71C7C2D228E0B280002E7E4 /* EntityNode.swift in Sources */,
@@ -551,6 +554,9 @@
 				E71C7BF7228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE6228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
+				44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */,
+				44A4DA0F6C52B97F19B5270A /* AppViewController2.swift in Sources */,
+				44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,8 +586,10 @@
 				E71C7C2A228E0B280002E7E4 /* ControlsViewController.swift in Sources */,
 				E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF8228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
-				E71C7BBD228E05570002E7E4 /* MacAppDelegate.swift in Sources */,
+				E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE7228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
+				44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */,
+				44A4DA805F70C1DC48B72AAB /* MainViewAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

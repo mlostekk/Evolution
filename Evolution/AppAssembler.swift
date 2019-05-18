@@ -5,11 +5,16 @@ import Foundation
 /// Global assembler aggregate
 protocol Assembler: SCNViewAssembler,
                     SimpleControlsViewAssembler,
-                    SquareWorldAssembler{
+                    SquareWorldAssembler,
+                    MainViewAssembler {
 
 }
 
 /// Global assembler instance
 class AppAssembler: Assembler {
+
+    func resolve() -> MainViewProtocol {
+        return GameController()
+    }
 
 }

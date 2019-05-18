@@ -11,42 +11,53 @@ import SceneKit
 
 class AppViewController: NSViewController {
 
-    var gameView: SCNView!
+    /// The main controller
+    var mainController: MainViewProtocol
 
-    var gameController: GameController!
+    /// The main assembler
+    let assembler:      Assembler
 
+    /// Required init
+    required init?(coder: NSCoder) {
+        fatalError("not implemented")
+    }
+
+    /// Construct with dependencies
+    init(assembler: Assembler) {
+        self.assembler = assembler
+        self.mainController = assembler.resolve()
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    /// Provide main view
     override func loadView() {
         self.view = NSView(frame: CGRect(x: 0, y: 0, width: 1000, height: 600))
     }
-    
+
+    /// View was loaded
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        gameView = SCNView(frame: self.view.frame)
-        self.view.addSubview(gameView)
-        self.gameController = GameController(sceneRenderer: gameView)
-        
-        // Allow the user to manipulate the camera
-        self.gameView.allowsCameraControl = true
-        
-        // Show statistics such as fps and timing information
-        self.gameView.showsStatistics = true
-        
-        // Configure the view
-        self.gameView.backgroundColor = NSColor.black
-        
+        // create main render view
+        let v = mainController.initializeWith(size: self.view.frame.size)
+        self.view.addSubview(v)
+
         // Add a click gesture recognizer
-        let clickGesture = NSClickGestureRecognizer(target: self, action: #selector(handleClick(_:)))
-        var gestureRecognizers = gameView.gestureRecognizers
+        let clickGesture       = NSClickGestureRecognizer(target: self, action: #selector(handleClick(_:)))
+        var gestureRecognizers = v.gestureRecognizers
         gestureRecognizers.insert(clickGesture, at: 0)
-        self.gameView.gestureRecognizers = gestureRecognizers
+        v.gestureRecognizers = gestureRecognizers
+
     }
-    
+
+    /// Handle click
     @objc
     func handleClick(_ gestureRecognizer: NSGestureRecognizer) {
         // Highlight the clicked nodes
-        let p = gestureRecognizer.location(in: gameView)
-        gameController.highlightNodes(atPoint: p)
+        let v = mainController.getView()
+        let p = gestureRecognizer.location(in: v)
+        mainController.highlightNodes(atPoint: p)
+
     }
-    
+
 }

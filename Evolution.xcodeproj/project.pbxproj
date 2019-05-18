@@ -16,7 +16,6 @@
 		454315B3C5D5A09AC84B0D36 /* Pods_Evolution_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */; };
 		E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAB228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* AppViewController.swift */; };
-		E71C7BB4228E05570002E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BB2228E05570002E7E4 /* LaunchScreen.storyboard */; };
 		E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBC228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBE228E05570002E7E4 /* AppViewController.swift */; };
 		E71C7BC4228E05570002E7E4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* GameController.swift */; };
@@ -96,7 +95,6 @@
 		E71C7BA9228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C7BAB228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E71C7BAD228E05570002E7E4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		E71C7BB3228E05570002E7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71C7BB5228E05570002E7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E71C7BBA228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C7BBC228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 			children = (
 				E71C7BAB228E05570002E7E4 /* AppDelegate.swift */,
 				E71C7BAD228E05570002E7E4 /* AppViewController.swift */,
-				E71C7BB2228E05570002E7E4 /* LaunchScreen.storyboard */,
 				E71C7BB5228E05570002E7E4 /* Info.plist */,
 			);
 			path = "Evolution iOS";
@@ -406,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71C7C31228E0B280002E7E4 /* Assets.scnassets in Resources */,
-				E71C7BB4228E05570002E7E4 /* LaunchScreen.storyboard in Resources */,
 				E71C7BC8228E05570002E7E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,17 +590,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E71C7BB2228E05570002E7E4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E71C7BB3228E05570002E7E4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E71C7BCB228E05570002E7E4 /* Debug */ = {

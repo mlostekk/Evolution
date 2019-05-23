@@ -3,17 +3,13 @@
 import SceneKit
 import RxSwift
 
-/// The Scenekit controller
-class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
-
-
-    /// Global assembler
-    private let assembler: Assembler
+/// The SceneKit controller
+class SceneKitController: NSObject, RootViewProtocol, SCNSceneRendererDelegate {
 
     /// The world
     private let world:     World
     /// The main view
-    var view: SCNView
+    var view: SCNView = SCNView(frame: .zero)
 
     /// Rx dispose bag
     private let disposeBag: DisposeBag = DisposeBag()
@@ -23,12 +19,9 @@ class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
     /// The entity root node
     let entityRootNode: SCNNode = SCNNode()
 
-
     /// Construction with dependenceis
-    init(assembler: Assembler) {
-        self.view = SCNView(frame: .zero)
-        self.assembler = assembler
-        self.world = assembler.resolve()
+    init(world: World) {
+        self.world = world
         super.init()
         world.entityStream.subscribe(onNext: handleNewEntity).disposed(by: disposeBag)
         world.foodStream.subscribe(onNext: handleNewFood).disposed(by: disposeBag)
@@ -78,6 +71,7 @@ class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
         return view
     }
 
+    /// Return the main view
     func getView() -> XView {
         return view
     }

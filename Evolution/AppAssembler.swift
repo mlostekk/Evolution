@@ -3,9 +3,8 @@
 import Foundation
 
 /// Global assembler aggregate
-protocol Assembler: SCNViewAssembler,
-                    SquareWorldAssembler,
-                    MainViewAssembler {
+protocol Assembler: SquareWorldAssembler,
+                    SceneKitAssembler {
 }
 
 /// Global assembler instance

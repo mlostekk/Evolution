@@ -6,7 +6,7 @@ import Cocoa
 class AppViewController: NSViewController {
 
     /// The main controller
-    var mainController: MainViewProtocol
+    var mainController: RootViewProtocol
 
     /// The main assembler
     let assembler:      Assembler

@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		37C96C40C8B29CE38C835910 /* Pods_Evolution_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */; };
-		44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
+		44A4D26725E76DA42D86D8BB /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D0051641819F6F17C58F /* SceneKitController.swift */; };
+		44A4D3BA9461AA2691001E6B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DEFB04F9D6C9B09E6051 /* RootView.swift */; };
+		44A4D4065137CBBD9B9D9577 /* RootViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* RootViewAssembler.swift */; };
+		44A4D5098FF97A2436219B94 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D0051641819F6F17C58F /* SceneKitController.swift */; };
+		44A4D5BFF76E1A1D969460E8 /* SceneKitAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */; };
 		44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
-		44A4DA805F70C1DC48B72AAB /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
+		44A4DA805F70C1DC48B72AAB /* RootViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* RootViewAssembler.swift */; };
+		44A4DB5D2694A030D78C7988 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DEFB04F9D6C9B09E6051 /* RootView.swift */; };
+		44A4DDDF006DA56A998DAA21 /* SceneKitAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */; };
 		44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
 		454315B3C5D5A09AC84B0D36 /* Pods_Evolution_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */; };
 		E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAB228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* AppViewController.swift */; };
 		E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBC228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BBE228E05570002E7E4 /* AppViewController.swift */; };
-		E71C7BC4228E05570002E7E4 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* SceneKitController.swift */; };
-		E71C7BC5228E05570002E7E4 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BA2228E05560002E7E4 /* SceneKitController.swift */; };
 		E71C7BC8228E05570002E7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BA4228E05570002E7E4 /* Assets.xcassets */; };
 		E71C7BC9228E05570002E7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7BA4228E05570002E7E4 /* Assets.xcassets */; };
 		E71C7BD3228E089E0002E7E4 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD1228E089E0002E7E4 /* Random.swift */; };
@@ -51,14 +55,6 @@
 		E71C7C30228E0B280002E7E4 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C25228E0B280002E7E4 /* FoodNode.swift */; };
 		E71C7C31228E0B280002E7E4 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7C26228E0B280002E7E4 /* Assets.scnassets */; };
 		E71C7C32228E0B280002E7E4 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7C26228E0B280002E7E4 /* Assets.scnassets */; };
-		E71C7C33228E0B280002E7E4 /* SCNViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C27228E0B280002E7E4 /* SCNViewAssembler.swift */; };
-		E71C7C34228E0B280002E7E4 /* SCNViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C27228E0B280002E7E4 /* SCNViewAssembler.swift */; };
-		E71C7C35228E0B280002E7E4 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C28228E0B280002E7E4 /* SCNViewController.swift */; };
-		E71C7C36228E0B280002E7E4 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C28228E0B280002E7E4 /* SCNViewController.swift */; };
-		E71C7C39228E0B510002E7E4 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C37228E0B510002E7E4 /* Views.swift */; };
-		E71C7C3A228E0B510002E7E4 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C37228E0B510002E7E4 /* Views.swift */; };
-		E71C7C3B228E0B510002E7E4 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */; };
-		E71C7C3C228E0B510002E7E4 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +63,11 @@
 		3DFB49DC408054F4B3EC70CB /* Pods-Evolution-Evolution iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution iOS.release.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution iOS/Pods-Evolution-Evolution iOS.release.xcconfig"; sourceTree = "<group>"; };
 		3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B9346CC52B5D74EE9BE7AF /* Pods-Evolution-Evolution macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution macOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution macOS/Pods-Evolution-Evolution macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		44A4D0051641819F6F17C58F /* SceneKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitController.swift; sourceTree = "<group>"; };
+		44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitAssembler.swift; sourceTree = "<group>"; };
 		44A4D38B206BF336E3B75378 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
-		44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewAssembler.swift; sourceTree = "<group>"; };
+		44A4DE0F79F170E2599D42E5 /* RootViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewAssembler.swift; sourceTree = "<group>"; };
+		44A4DEFB04F9D6C9B09E6051 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706824908A592725EF6FB2 /* Pods_Evolution_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E650E8863C4A3133291069 /* Pods-Evolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution.release.xcconfig"; path = "Target Support Files/Pods-Evolution/Pods-Evolution.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		D24776F29C00EEC75C8FC438 /* Pods_Evolution_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D437A6D0645B8821274305DE /* Pods-EvolutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvolutionTests.release.xcconfig"; path = "Target Support Files/Pods-EvolutionTests/Pods-EvolutionTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7034ABB228F5BDF00D28CBB /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
-		E71C7BA2228E05560002E7E4 /* SceneKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitController.swift; sourceTree = "<group>"; };
 		E71C7BA4228E05570002E7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71C7BA9228E05570002E7E4 /* Evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C7BAB228E05570002E7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,10 +105,6 @@
 		E71C7C24228E0B280002E7E4 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		E71C7C25228E0B280002E7E4 /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
 		E71C7C26228E0B280002E7E4 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
-		E71C7C27228E0B280002E7E4 /* SCNViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewAssembler.swift; sourceTree = "<group>"; };
-		E71C7C28228E0B280002E7E4 /* SCNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
-		E71C7C37228E0B510002E7E4 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
-		E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
 		E7E0D7EF74061E0667ACA7BE /* Pods-Evolution iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution iOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution iOS/Pods-Evolution iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,8 +150,6 @@
 		44A4DDCE0C5C7A77B044DFB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */,
-				E71C7C37228E0B510002E7E4 /* Views.swift */,
 				E71C7C22228E0B280002E7E4 /* SceneKit */,
 			);
 			path = View;
@@ -181,14 +173,14 @@
 			isa = PBXGroup;
 			children = (
 				E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */,
-				E71C7BA2228E05560002E7E4 /* SceneKitController.swift */,
 				E71C7BA4228E05570002E7E4 /* Assets.xcassets */,
 				E71C7BD7228E08AD0002E7E4 /* Model */,
 				E71C7BD0228E089E0002E7E4 /* Util */,
 				E71C7BF1228E09400002E7E4 /* VectorMath */,
 				44A4DDCE0C5C7A77B044DFB2 /* View */,
 				44A4D38B206BF336E3B75378 /* CommonTypes.swift */,
-				44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */,
+				44A4DE0F79F170E2599D42E5 /* RootViewAssembler.swift */,
+				44A4DEFB04F9D6C9B09E6051 /* RootView.swift */,
 			);
 			path = Evolution;
 			sourceTree = "<group>";
@@ -259,8 +251,8 @@
 			children = (
 				E71C7C23228E0B280002E7E4 /* Nodes */,
 				E71C7C26228E0B280002E7E4 /* Assets.scnassets */,
-				E71C7C27228E0B280002E7E4 /* SCNViewAssembler.swift */,
-				E71C7C28228E0B280002E7E4 /* SCNViewController.swift */,
+				44A4D0051641819F6F17C58F /* SceneKitController.swift */,
+				44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -507,25 +499,23 @@
 				E71C7BD3228E089E0002E7E4 /* Random.swift in Sources */,
 				E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BF5228E09400002E7E4 /* VectorMath.swift in Sources */,
-				E71C7C39228E0B510002E7E4 /* Views.swift in Sources */,
 				E71C7C2D228E0B280002E7E4 /* EntityNode.swift in Sources */,
-				E71C7C33228E0B280002E7E4 /* SCNViewAssembler.swift in Sources */,
-				E71C7C3B228E0B510002E7E4 /* ViewAssembler.swift in Sources */,
 				E71C7C2F228E0B280002E7E4 /* FoodNode.swift in Sources */,
 				E71C7BE0228E08AD0002E7E4 /* Entity.swift in Sources */,
 				E71C7BF9228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */,
 				E71C7BE8228E08AD0002E7E4 /* WorldAssembler.swift in Sources */,
 				E71C7BD5228E089E0002E7E4 /* Log.swift in Sources */,
-				E71C7C35228E0B280002E7E4 /* SCNViewController.swift in Sources */,
 				E71C7BEC228E08AD0002E7E4 /* World.swift in Sources */,
 				E71C7BE4228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
-				E71C7BC4228E05570002E7E4 /* SceneKitController.swift in Sources */,
 				E71C7BFF228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF7228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE6228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
 				44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */,
-				44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */,
+				44A4D4065137CBBD9B9D9577 /* RootViewAssembler.swift in Sources */,
+				44A4D5098FF97A2436219B94 /* SceneKitController.swift in Sources */,
+				44A4D3BA9461AA2691001E6B /* RootView.swift in Sources */,
+				44A4D5BFF76E1A1D969460E8 /* SceneKitAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,25 +527,23 @@
 				E71C7BD4228E089E0002E7E4 /* Random.swift in Sources */,
 				E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BF6228E09400002E7E4 /* VectorMath.swift in Sources */,
-				E71C7C3A228E0B510002E7E4 /* Views.swift in Sources */,
 				E71C7C2E228E0B280002E7E4 /* EntityNode.swift in Sources */,
-				E71C7C34228E0B280002E7E4 /* SCNViewAssembler.swift in Sources */,
-				E71C7C3C228E0B510002E7E4 /* ViewAssembler.swift in Sources */,
 				E71C7C30228E0B280002E7E4 /* FoodNode.swift in Sources */,
 				E71C7BE1228E08AD0002E7E4 /* Entity.swift in Sources */,
 				E71C7BFA228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */,
 				E71C7BE9228E08AD0002E7E4 /* WorldAssembler.swift in Sources */,
 				E71C7BD6228E089E0002E7E4 /* Log.swift in Sources */,
-				E71C7C36228E0B280002E7E4 /* SCNViewController.swift in Sources */,
 				E71C7BED228E08AD0002E7E4 /* World.swift in Sources */,
 				E71C7BE5228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
-				E71C7BC5228E05570002E7E4 /* SceneKitController.swift in Sources */,
 				E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF8228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE7228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
 				44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */,
-				44A4DA805F70C1DC48B72AAB /* MainViewAssembler.swift in Sources */,
+				44A4DA805F70C1DC48B72AAB /* RootViewAssembler.swift in Sources */,
+				44A4D26725E76DA42D86D8BB /* SceneKitController.swift in Sources */,
+				44A4DB5D2694A030D78C7988 /* RootView.swift in Sources */,
+				44A4DDDF006DA56A998DAA21 /* SceneKitAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

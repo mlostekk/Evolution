@@ -3,11 +3,11 @@
 import RxSwift
 
 /// Global instance of the world
-private var world: World?
+private var squareWorld: World = SquareWorld()
 
 
 /// The SceneKit specific assembler
-protocol SquareWorldAssembler: ViewAssembler {
+protocol SquareWorldAssembler: WorldAssembler {
 
     func resolve() -> World
 }
@@ -18,11 +18,6 @@ extension SquareWorldAssembler where Self: Assembler {
 
     /// Return square world
     func resolve() -> World {
-        if let w = world {
-            return w
-        }
-        let newWorld = SquareWorld()
-        world = newWorld
-        return newWorld
+        return squareWorld
     }
 }

@@ -4,7 +4,6 @@ import Foundation
 
 /// Global assembler aggregate
 protocol Assembler: SCNViewAssembler,
-                    SimpleControlsViewAssembler,
                     SquareWorldAssembler,
                     MainViewAssembler {
 
@@ -14,7 +13,7 @@ protocol Assembler: SCNViewAssembler,
 class AppAssembler: Assembler {
 
     func resolve() -> MainViewProtocol {
-        return SceneKitController()
+        return SceneKitController(assembler: self)
     }
 
 }

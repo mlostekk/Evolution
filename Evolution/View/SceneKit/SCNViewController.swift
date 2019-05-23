@@ -24,8 +24,6 @@ class SCNViewController: UIViewController, RenderView {
     /// Rx disposal
     let disposeBag:     DisposeBag = DisposeBag()
 
-    /// The entity root node
-    let entityRootNode: SCNNode    = SCNNode()
 
     /// Default constructor, shall not pass
     required init?(coder aDecoder: NSCoder) {
@@ -35,23 +33,10 @@ class SCNViewController: UIViewController, RenderView {
     /// Construction with dependencies
     required init(world: World) {
         super.init(nibName: nil, bundle: nil)
-        world.entityStream.subscribe(onNext: handleNewEntity).disposed(by: disposeBag)
-        world.foodStream.subscribe(onNext: handleNewFood).disposed(by: disposeBag)
+
     }
 
-    /// Handler for incoming entities
-    private func handleNewEntity(entity: Entity) {
-        if let newEntityNode = EntityNode.createWith(entity: entity) {
-            entityRootNode.addChildNode(newEntityNode)
-            newEntityNode.look(at: SCNVector3())
-        }
-    }
 
-    /// Handler for incoming foods
-    private func handleNewFood(food: Food) {
-        let newFoodNode = FoodNode(food: food)
-        entityRootNode.addChildNode(newFoodNode)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -161,4 +146,5 @@ class SCNViewController: UIViewController, RenderView {
 
 
 }
+
 */

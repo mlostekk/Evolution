@@ -6,7 +6,5 @@ protocol ViewAssembler {
     /// Get the renderer
     func resolve() -> RenderView
 
-    /// Get the controls view
-    func resolve() -> ControlsView
 
 }

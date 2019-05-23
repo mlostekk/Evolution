@@ -1,20 +1,51 @@
 //  Copyright © 2019 Nomad5. All rights reserved.
 
 import SceneKit
+import RxSwift
 
 /// The Scenekit controller
 class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
 
+
+    /// Global assembler
+    private let assembler: Assembler
+
+    /// The world
+    private let world:     World
     /// The main view
-    var view:  SCNView
-    
+    var view: SCNView
+
+    /// Rx dispose bag
+    private let disposeBag: DisposeBag = DisposeBag()
     /// The scene
-    var scene: SCNScene?
+    var scene:          SCNScene?
+
+    /// The entity root node
+    let entityRootNode: SCNNode = SCNNode()
+
 
     /// Construction with dependenceis
-    override init() {
+    init(assembler: Assembler) {
         self.view = SCNView(frame: .zero)
+        self.assembler = assembler
+        self.world = assembler.resolve()
         super.init()
+        world.entityStream.subscribe(onNext: handleNewEntity).disposed(by: disposeBag)
+        world.foodStream.subscribe(onNext: handleNewFood).disposed(by: disposeBag)
+    }
+
+    /// Handler for incoming entities
+    private func handleNewEntity(entity: Entity) {
+        if let newEntityNode = EntityNode.createWith(entity: entity) {
+            entityRootNode.addChildNode(newEntityNode)
+            newEntityNode.look(at: SCNVector3())
+        }
+    }
+
+    /// Handler for incoming foods
+    private func handleNewFood(food: Food) {
+        let newFoodNode = FoodNode(food: food)
+        entityRootNode.addChildNode(newFoodNode)
     }
 
     /// Create the view
@@ -23,11 +54,19 @@ class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
         scene = SCNScene(named: "Assets.scnassets/MainScene.scn")!
 
 
-        // Allow the user to manipulate the camera
+        /// set the scene to the view
+        view.scene = scene
+
+        // allows the user to manipulate the camera
         view.allowsCameraControl = true
 
-        // Show statistics such as fps and timing information
+        // show statistics such as fps and timing information
         view.showsStatistics = true
+
+        // configure the view
+        view.backgroundColor = XColor.black
+
+        scene?.rootNode.addChildNode(entityRootNode)
 
         view.delegate = self
 
@@ -45,6 +84,7 @@ class SceneKitController: NSObject, MainViewProtocol, SCNSceneRendererDelegate {
 
     /// Handle click
     func highlightNodes(atPoint point: CGPoint) {
+        world.reset()
         let hitResults = self.view.hitTest(point, options: [:])
         for result in hitResults {
             // get its material

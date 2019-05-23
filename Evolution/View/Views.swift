@@ -10,16 +10,3 @@ protocol RenderView {
 
 }
 
-/// The interface for the controls
-protocol ControlsView {
-
-    /// Step button tap observable
-    var stepButtonStream:     Observable<Void> { get }
-
-    /// Step button tap observable
-    var resetButtonStream:    Observable<Void> { get }
-
-    /// Step button tap observable
-    var settingsButtonStream: Observable<Void> { get }
-
-}

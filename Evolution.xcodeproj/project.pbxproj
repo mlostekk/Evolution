@@ -10,7 +10,6 @@
 		37C96C40C8B29CE38C835910 /* Pods_Evolution_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */; };
 		44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
 		44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
-		44A4DA0F6C52B97F19B5270A /* AppViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */; };
 		44A4DA805F70C1DC48B72AAB /* MainViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */; };
 		44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
 		454315B3C5D5A09AC84B0D36 /* Pods_Evolution_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */; };
@@ -28,8 +27,6 @@
 		E71C7BD6228E089E0002E7E4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD2228E089E0002E7E4 /* Log.swift */; };
 		E71C7BE0228E08AD0002E7E4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD8228E08AD0002E7E4 /* Entity.swift */; };
 		E71C7BE1228E08AD0002E7E4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD8228E08AD0002E7E4 /* Entity.swift */; };
-		E71C7BE2228E08AD0002E7E4 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD9228E08AD0002E7E4 /* Trait.swift */; };
-		E71C7BE3228E08AD0002E7E4 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BD9228E08AD0002E7E4 /* Trait.swift */; };
 		E71C7BE4228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BDB228E08AD0002E7E4 /* SquareWorldAssembler.swift */; };
 		E71C7BE5228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BDB228E08AD0002E7E4 /* SquareWorldAssembler.swift */; };
 		E71C7BE6228E08AD0002E7E4 /* SquareWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BDC228E08AD0002E7E4 /* SquareWorld.swift */; };
@@ -48,10 +45,6 @@
 		E71C7BFA228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BF4228E09400002E7E4 /* VectorMath+SceneKit.swift */; };
 		E71C7BFF228E09DE0002E7E4 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */; };
 		E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */; };
-		E71C7C29228E0B280002E7E4 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C20228E0B280002E7E4 /* ControlsViewController.swift */; };
-		E71C7C2A228E0B280002E7E4 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C20228E0B280002E7E4 /* ControlsViewController.swift */; };
-		E71C7C2B228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C21228E0B280002E7E4 /* ControlsViewAssembler.swift */; };
-		E71C7C2C228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C21228E0B280002E7E4 /* ControlsViewAssembler.swift */; };
 		E71C7C2D228E0B280002E7E4 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C24228E0B280002E7E4 /* EntityNode.swift */; };
 		E71C7C2E228E0B280002E7E4 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C24228E0B280002E7E4 /* EntityNode.swift */; };
 		E71C7C2F228E0B280002E7E4 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C25228E0B280002E7E4 /* FoodNode.swift */; };
@@ -75,7 +68,6 @@
 		3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B9346CC52B5D74EE9BE7AF /* Pods-Evolution-Evolution macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution macOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution macOS/Pods-Evolution-Evolution macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		44A4D38B206BF336E3B75378 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
-		44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController2.swift; sourceTree = "<group>"; };
 		44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewAssembler.swift; sourceTree = "<group>"; };
 		5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706824908A592725EF6FB2 /* Pods_Evolution_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +95,6 @@
 		E71C7BD1228E089E0002E7E4 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		E71C7BD2228E089E0002E7E4 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E71C7BD8228E08AD0002E7E4 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		E71C7BD9228E08AD0002E7E4 /* Trait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
 		E71C7BDB228E08AD0002E7E4 /* SquareWorldAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWorldAssembler.swift; sourceTree = "<group>"; };
 		E71C7BDC228E08AD0002E7E4 /* SquareWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWorld.swift; sourceTree = "<group>"; };
 		E71C7BDD228E08AD0002E7E4 /* WorldAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldAssembler.swift; sourceTree = "<group>"; };
@@ -113,8 +104,6 @@
 		E71C7BF3228E09400002E7E4 /* VectorMath+Quartz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+Quartz.swift"; sourceTree = "<group>"; };
 		E71C7BF4228E09400002E7E4 /* VectorMath+SceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+SceneKit.swift"; sourceTree = "<group>"; };
 		E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		E71C7C20228E0B280002E7E4 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
-		E71C7C21228E0B280002E7E4 /* ControlsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewAssembler.swift; sourceTree = "<group>"; };
 		E71C7C24228E0B280002E7E4 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		E71C7C25228E0B280002E7E4 /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
 		E71C7C26228E0B280002E7E4 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
@@ -169,7 +158,6 @@
 			children = (
 				E71C7C38228E0B510002E7E4 /* ViewAssembler.swift */,
 				E71C7C37228E0B510002E7E4 /* Views.swift */,
-				E71C7C1F228E0B280002E7E4 /* Controls */,
 				E71C7C22228E0B280002E7E4 /* SceneKit */,
 			);
 			path = View;
@@ -200,7 +188,6 @@
 				E71C7BF1228E09400002E7E4 /* VectorMath */,
 				44A4DDCE0C5C7A77B044DFB2 /* View */,
 				44A4D38B206BF336E3B75378 /* CommonTypes.swift */,
-				44A4DB3F315E9EAEA98260E8 /* AppViewController2.swift */,
 				44A4DE0F79F170E2599D42E5 /* MainViewAssembler.swift */,
 			);
 			path = Evolution;
@@ -239,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				E71C7BD8228E08AD0002E7E4 /* Entity.swift */,
-				E71C7BD9228E08AD0002E7E4 /* Trait.swift */,
 				E71C7BDA228E08AD0002E7E4 /* SquareWorld */,
 				E71C7BDD228E08AD0002E7E4 /* WorldAssembler.swift */,
 				E71C7BDE228E08AD0002E7E4 /* Food.swift */,
@@ -267,15 +253,6 @@
 			name = VectorMath;
 			path = Submodules/VectorMath/VectorMath;
 			sourceTree = SOURCE_ROOT;
-		};
-		E71C7C1F228E0B280002E7E4 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				E71C7C20228E0B280002E7E4 /* ControlsViewController.swift */,
-				E71C7C21228E0B280002E7E4 /* ControlsViewAssembler.swift */,
-			);
-			path = Controls;
-			sourceTree = "<group>";
 		};
 		E71C7C22228E0B280002E7E4 /* SceneKit */ = {
 			isa = PBXGroup;
@@ -541,17 +518,13 @@
 				E71C7BD5228E089E0002E7E4 /* Log.swift in Sources */,
 				E71C7C35228E0B280002E7E4 /* SCNViewController.swift in Sources */,
 				E71C7BEC228E08AD0002E7E4 /* World.swift in Sources */,
-				E71C7C2B228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */,
 				E71C7BE4228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
-				E71C7BE2228E08AD0002E7E4 /* Trait.swift in Sources */,
 				E71C7BC4228E05570002E7E4 /* SceneKitController.swift in Sources */,
-				E71C7C29228E0B280002E7E4 /* ControlsViewController.swift in Sources */,
 				E71C7BFF228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF7228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE6228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
 				44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */,
-				44A4DA0F6C52B97F19B5270A /* AppViewController2.swift in Sources */,
 				44A4D4065137CBBD9B9D9577 /* MainViewAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,11 +548,8 @@
 				E71C7BD6228E089E0002E7E4 /* Log.swift in Sources */,
 				E71C7C36228E0B280002E7E4 /* SCNViewController.swift in Sources */,
 				E71C7BED228E08AD0002E7E4 /* World.swift in Sources */,
-				E71C7C2C228E0B280002E7E4 /* ControlsViewAssembler.swift in Sources */,
 				E71C7BE5228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
-				E71C7BE3228E08AD0002E7E4 /* Trait.swift in Sources */,
 				E71C7BC5228E05570002E7E4 /* SceneKitController.swift in Sources */,
-				E71C7C2A228E0B280002E7E4 /* ControlsViewController.swift in Sources */,
 				E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
 				E71C7BF8228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */,

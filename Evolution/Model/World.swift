@@ -19,10 +19,3 @@ protocol World {
     var foodStream: Observable<Food> { get }
 }
 
-/// Config struct
-struct Config {
-
-    /// Initial entities
-    let entities: [Entity]
-
-}

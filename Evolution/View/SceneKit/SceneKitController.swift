@@ -4,7 +4,7 @@ import SceneKit
 import RxSwift
 
 /// The SceneKit controller
-class SceneKitController: NSObject, RootViewProtocol, SCNSceneRendererDelegate {
+class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
 
     /// The world
     private let world:     World
@@ -42,7 +42,7 @@ class SceneKitController: NSObject, RootViewProtocol, SCNSceneRendererDelegate {
     }
 
     /// Create the view
-    func initializeWith(size: CGSize) -> XView {
+    func initialize(with size: CGSize) -> XView {
         view.frame = CGRect(origin: .zero, size: size)
         scene = SCNScene(named: "Assets.scnassets/MainScene.scn")!
 
@@ -71,14 +71,8 @@ class SceneKitController: NSObject, RootViewProtocol, SCNSceneRendererDelegate {
         return view
     }
 
-    /// Return the main view
-    func getView() -> XView {
-        return view
-    }
-
     /// Handle click
-    func highlightNodes(atPoint point: CGPoint) {
-        world.reset()
+    func handleClick(atPoint point: CGPoint) {
         let hitResults = self.view.hitTest(point, options: [:])
         for result in hitResults {
             // get its material

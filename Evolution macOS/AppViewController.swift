@@ -6,11 +6,12 @@ import Cocoa
 class AppViewController: NSViewController {
 
     /// The main controller
-    var mainController: RootViewProtocol
+    var rootController: AppController
 
-    /// The main assembler
-    let assembler:      Assembler
-
+    /// The main root view (implicitly unwrapped 
+    /// because created inside viewDidLoad)
+    var rootView:       NSView!
+    
     /// Required init
     required init?(coder: NSCoder) {
         fatalError("not implemented")
@@ -18,8 +19,7 @@ class AppViewController: NSViewController {
 
     /// Construct with dependencies
     init(assembler: Assembler) {
-        self.assembler = assembler
-        self.mainController = assembler.resolve()
+        self.rootController = assembler.resolve()
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -33,14 +33,14 @@ class AppViewController: NSViewController {
         super.viewDidLoad()
 
         // create main render view
-        let v = mainController.initializeWith(size: self.view.frame.size)
-        self.view.addSubview(v)
+        rootView = rootController.initialize(with: self.view.frame.size)
+        self.view.addSubview(rootView)
 
         // Add a click gesture recognizer
         let clickGesture       = NSClickGestureRecognizer(target: self, action: #selector(handleClick(_:)))
-        var gestureRecognizers = v.gestureRecognizers
+        var gestureRecognizers = rootView.gestureRecognizers
         gestureRecognizers.insert(clickGesture, at: 0)
-        v.gestureRecognizers = gestureRecognizers
+        rootView.gestureRecognizers = gestureRecognizers
 
     }
 
@@ -48,9 +48,8 @@ class AppViewController: NSViewController {
     @objc
     func handleClick(_ gestureRecognizer: NSGestureRecognizer) {
         // Highlight the clicked nodes
-        let v = mainController.getView()
-        let p = gestureRecognizer.location(in: v)
-        mainController.highlightNodes(atPoint: p)
+        let point = gestureRecognizer.location(in: rootView)
+        rootController.handleClick(atPoint: point)
 
     }
 

@@ -6,10 +6,11 @@ import UIKit
 class AppViewController: UIViewController {
 
     /// The main controller
-    var mainController: RootViewProtocol
+    var rootController: AppController
 
-    /// The main assembler
-    let assembler:      Assembler
+    /// The main root view (implicitly unwrapped
+    /// because created inside viewDidLoad)
+    var rootView:       UIView!
 
     /// Required init
     required init?(coder: NSCoder) {
@@ -18,8 +19,7 @@ class AppViewController: UIViewController {
 
     /// Construct with dependencies
     init(assembler: Assembler) {
-        self.assembler = assembler
-        self.mainController = assembler.resolve()
+        self.rootController = assembler.resolve()
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -28,22 +28,21 @@ class AppViewController: UIViewController {
         super.viewDidLoad()
 
         // create main render view
-        let mainView = mainController.initializeWith(size: self.view.frame.size)
-        self.view.addSubview(mainView)
+        rootView = rootController.initialize(with: self.view.frame.size)
+        self.view.addSubview(rootView)
 
         // Add a tap gesture recognizer
         let tapGesture         = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        var gestureRecognizers = mainView.gestureRecognizers ?? []
+        var gestureRecognizers = rootView.gestureRecognizers ?? []
         gestureRecognizers.insert(tapGesture, at: 0)
-        mainView.gestureRecognizers = gestureRecognizers
+        rootView.gestureRecognizers = gestureRecognizers
     }
 
     /// Handle tap
     @objc func handleTap(_ gestureRecognizer: UIGestureRecognizer) {
         // Highlight the clicked nodes
-        let mainView = mainController.getView()
-        let point    = gestureRecognizer.location(in: mainView)
-        mainController.highlightNodes(atPoint: point)
+        let point = gestureRecognizer.location(in: rootView)
+        rootController.handleClick(atPoint: point)
     }
 
     /// Fullscreen

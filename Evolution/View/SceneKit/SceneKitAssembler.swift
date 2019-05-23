@@ -4,16 +4,16 @@ import Foundation
 import CoreGraphics
 
 /// The SceneKit specific assembler
-protocol SceneKitAssembler: RootViewAssembler {
+protocol SceneKitAssembler: ViewAssembler {
 
-    func resolve() -> RootViewProtocol
+    func resolve() -> RootView
 }
 
 
 /// Implementation of the SceneKit specific assembler
 extension SceneKitAssembler where Self: Assembler {
 
-    func resolve() -> RootViewProtocol {
+    func resolve() -> RootView {
         return SceneKitController(world: resolve())
     }
 }

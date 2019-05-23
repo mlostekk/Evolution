@@ -3,7 +3,8 @@
 import Foundation
 
 /// Global assembler aggregate
-protocol Assembler: SquareWorldAssembler,
+protocol Assembler: AppControllerAssembler,
+                    SquareWorldAssembler,
                     SceneKitAssembler {
 }
 

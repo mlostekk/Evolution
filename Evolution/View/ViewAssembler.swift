@@ -18,3 +18,11 @@ protocol RootView {
     func handleClick(atPoint point: CGPoint)
 
 }
+
+/// The user interface view
+protocol UserInterfaceView {
+
+    /// Create and attach to the given view
+    func initialize(within view: XView)
+
+}

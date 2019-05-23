@@ -22,18 +22,24 @@ class MainAppController: AppController {
     /// The global assembler
     let mainView: RootView
 
+    /// The user interface view
+    let uiView:   UserInterfaceView
+
     /// The world
     let world:    World
 
     /// Constructor with dependencies
-    init(rootView: RootView, world: World) {
+    init(rootView: RootView, uiView: UserInterfaceView, world: World) {
         self.mainView = rootView
+        self.uiView = uiView
         self.world = world
     }
 
     /// The main initialization. Returns the main view
     func initialize(with size: CGSize) -> XView {
-        return mainView.initialize(with: size)
+        let view = mainView.initialize(with: size)
+        uiView.initialize(within: view)
+        return view
     }
 
     /// Main point to handle / forward clicks

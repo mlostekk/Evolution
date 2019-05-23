@@ -13,6 +13,7 @@ extension AppControllerAssembler where Self: Assembler {
 
     func resolve() -> AppController {
         return MainAppController(rootView: resolve(),
+                                 uiView: resolve(),
                                  world: resolve())
     }
 }

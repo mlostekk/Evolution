@@ -6,22 +6,20 @@ import RxSwift
 /// The SceneKit controller
 class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
 
-    /// The world
-    private let world:     World
-    /// The main view
-    var view: SCNView = SCNView(frame: .zero)
+    /// The main SceneKit view
+    private var view:           SCNView    = SCNView(frame: .zero)
 
-    /// Rx dispose bag
-    private let disposeBag: DisposeBag = DisposeBag()
-    /// The scene
-    var scene:          SCNScene?
+    /// Rx disposal
+    private let disposeBag:     DisposeBag = DisposeBag()
 
     /// The entity root node
-    let entityRootNode: SCNNode = SCNNode()
+    private let entityRootNode: SCNNode    = SCNNode()
 
-    /// Construction with dependenceis
+    /// The scene
+    private var scene:          SCNScene?
+
+    /// Construction with dependencies
     init(world: World) {
-        self.world = world
         super.init()
         world.entityStream.subscribe(onNext: handleNewEntity).disposed(by: disposeBag)
         world.foodStream.subscribe(onNext: handleNewFood).disposed(by: disposeBag)
@@ -44,30 +42,20 @@ class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
     /// Create the view
     func initialize(with size: CGSize) -> XView {
         view.frame = CGRect(origin: .zero, size: size)
-        scene = SCNScene(named: "Assets.scnassets/MainScene.scn")!
-
+        scene = SCNScene(named: "Assets.scnassets/MainScene.scn")
+        scene?.rootNode.addChildNode(entityRootNode)
 
         /// set the scene to the view
         view.scene = scene
-
         // allows the user to manipulate the camera
         view.allowsCameraControl = true
-
         // show statistics such as fps and timing information
         view.showsStatistics = true
-
-        // configure the view
-        view.backgroundColor = XColor.black
-
-        scene?.rootNode.addChildNode(entityRootNode)
-
+        // set the view delegate
         view.delegate = self
-
-//        if let ship = scene.rootNode.childNode(withName: "ship", recursively: true) {
-//            ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-//        }
-
+        /// set the scene
         view.scene = scene
+
         return view
     }
 
@@ -100,7 +88,8 @@ class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
         }
     }
 
+    // Called before each frame is rendered
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        // Called before each frame is rendered
+
     }
 }

@@ -6,14 +6,8 @@ import Foundation
 protocol Assembler: SCNViewAssembler,
                     SquareWorldAssembler,
                     MainViewAssembler {
-
 }
 
 /// Global assembler instance
 class AppAssembler: Assembler {
-
-    func resolve() -> MainViewProtocol {
-        return SceneKitController(assembler: self)
-    }
-
 }

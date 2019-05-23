@@ -1,7 +1,6 @@
 // Copyright (c) 2019 Nomad5. All rights reserved.
 
 import Foundation
-import UIKit
 
 /// Base entity that does evolution
 class Entity {

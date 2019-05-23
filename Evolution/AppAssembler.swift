@@ -3,13 +3,12 @@
 import Foundation
 
 /// Global assembler aggregate
-protocol Assembler: SCNViewAssembler,
-                    SimpleControlsViewAssembler,
-                    SquareWorldAssembler{
-
+protocol Assembler: AppControllerAssembler,
+                    SquareWorldAssembler,
+                    SceneKitAssembler,
+                    PlainAssembler {
 }
 
 /// Global assembler instance
 class AppAssembler: Assembler {
-
 }

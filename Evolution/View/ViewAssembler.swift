@@ -1,14 +1,28 @@
 // Copyright (c) 2019 Nomad5. All rights reserved.
 
-import UIKit
+import Foundation
 
-/// The interface for rendering
+/// The main root view assembler
 protocol ViewAssembler {
 
-    /// Get the renderer
-    func resolve() -> RenderView
+    func resolve() -> RootView
+}
 
-    /// Get the controls view
-    func resolve() -> ControlsView
+/// Root view protocol
+protocol RootView {
+
+    /// get view
+    func initialize(with size: CGSize) -> XView
+
+    /// click
+    func handleClick(atPoint point: CGPoint)
+
+}
+
+/// The user interface view
+protocol UserInterfaceView {
+
+    /// Create and attach to the given view
+    func initialize(within view: XView)
 
 }

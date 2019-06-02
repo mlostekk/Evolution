@@ -8,22 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		37C96C40C8B29CE38C835910 /* Pods_Evolution_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */; };
-		44A4D2625E03AAA17FD7BED7 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF26AA77606396945A5F /* ViewAssembler.swift */; };
-		44A4D26725E76DA42D86D8BB /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D0051641819F6F17C58F /* SceneKitController.swift */; };
-		44A4D5098FF97A2436219B94 /* SceneKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D0051641819F6F17C58F /* SceneKitController.swift */; };
-		44A4D5BFF76E1A1D969460E8 /* SceneKitAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */; };
+		44A4D48082A406CAB07C4187 /* WorldViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D547AD4A34971AA585B9 /* WorldViewAssembler.swift */; };
 		44A4D5CB29709CCDCF8120DF /* AppControllerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D8B55DFD30FC12D44D93 /* AppControllerAssembler.swift */; };
 		44A4D6AB8F4788F4F7AE0888 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDEED4E377F48993908D /* AppController.swift */; };
-		44A4D70C8727D440FF8D6841 /* PlainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DBC13772F76398407662 /* PlainController.swift */; };
-		44A4D76921023BF3076DD5FB /* PlainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D25AE2B695516BAF45CD /* PlainAssembler.swift */; };
+		44A4D6DAFCE942E04207A6F9 /* WorldViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D547AD4A34971AA585B9 /* WorldViewAssembler.swift */; };
 		44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
-		44A4D8747BF0269A33ADE805 /* PlainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DBC13772F76398407662 /* PlainController.swift */; };
 		44A4DAD9F4F5427CDC414181 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DDEED4E377F48993908D /* AppController.swift */; };
 		44A4DBE86AEA6B362A793291 /* AppControllerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D8B55DFD30FC12D44D93 /* AppControllerAssembler.swift */; };
-		44A4DC503EE5E7EFC5EB6061 /* ViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF26AA77606396945A5F /* ViewAssembler.swift */; };
-		44A4DDDF006DA56A998DAA21 /* SceneKitAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */; };
+		44A4DC229B0E81429DCE8DBF /* UserInterfaceViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D250CBE32709C943CDDD /* UserInterfaceViewAssembler.swift */; };
+		44A4DC745C3A343C844E0AF6 /* UserInterfaceViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D250CBE32709C943CDDD /* UserInterfaceViewAssembler.swift */; };
 		44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D38B206BF336E3B75378 /* CommonTypes.swift */; };
-		44A4DF840739D5BAAE5CBF2A /* PlainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D25AE2B695516BAF45CD /* PlainAssembler.swift */; };
 		454315B3C5D5A09AC84B0D36 /* Pods_Evolution_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */; };
 		E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAB228E05570002E7E4 /* AppDelegate.swift */; };
 		E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BAD228E05570002E7E4 /* AppViewController.swift */; };
@@ -55,12 +49,24 @@
 		E71C7BFA228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BF4228E09400002E7E4 /* VectorMath+SceneKit.swift */; };
 		E71C7BFF228E09DE0002E7E4 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */; };
 		E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */; };
-		E71C7C2D228E0B280002E7E4 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C24228E0B280002E7E4 /* EntityNode.swift */; };
-		E71C7C2E228E0B280002E7E4 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C24228E0B280002E7E4 /* EntityNode.swift */; };
-		E71C7C2F228E0B280002E7E4 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C25228E0B280002E7E4 /* FoodNode.swift */; };
-		E71C7C30228E0B280002E7E4 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C7C25228E0B280002E7E4 /* FoodNode.swift */; };
 		E71C7C31228E0B280002E7E4 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7C26228E0B280002E7E4 /* Assets.scnassets */; };
 		E71C7C32228E0B280002E7E4 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C7C26228E0B280002E7E4 /* Assets.scnassets */; };
+		E7E3334822A3CE8E007F9923 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334322A3CE8E007F9923 /* EntityNode.swift */; };
+		E7E3334922A3CE8E007F9923 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334422A3CE8E007F9923 /* FoodNode.swift */; };
+		E7E3334A22A3CE8E007F9923 /* SKWorldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334522A3CE8E007F9923 /* SKWorldController.swift */; };
+		E7E3334B22A3CE8E007F9923 /* SKWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334622A3CE8E007F9923 /* SKWorldAssembler.swift */; };
+		E7E3334C22A3CE8E007F9923 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334722A3CE8E007F9923 /* WorldView.swift */; };
+		E7E3335122A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334E22A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift */; };
+		E7E3335222A3CE99007F9923 /* UIKitUserInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334F22A3CE99007F9923 /* UIKitUserInterfaceController.swift */; };
+		E7E3335322A3CE99007F9923 /* UserInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3335022A3CE99007F9923 /* UserInterfaceView.swift */; };
+		E7E3335422A3CF27007F9923 /* UIKitUserInterfaceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334E22A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift */; };
+		E7E3335522A3CF28007F9923 /* UIKitUserInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334F22A3CE99007F9923 /* UIKitUserInterfaceController.swift */; };
+		E7E3335622A3CF2A007F9923 /* UserInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3335022A3CE99007F9923 /* UserInterfaceView.swift */; };
+		E7E3335722A3CF2D007F9923 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334722A3CE8E007F9923 /* WorldView.swift */; };
+		E7E3335822A3CF33007F9923 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334322A3CE8E007F9923 /* EntityNode.swift */; };
+		E7E3335922A3CF33007F9923 /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334422A3CE8E007F9923 /* FoodNode.swift */; };
+		E7E3335A22A3CF33007F9923 /* SKWorldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334522A3CE8E007F9923 /* SKWorldController.swift */; };
+		E7E3335B22A3CF33007F9923 /* SKWorldAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3334622A3CE8E007F9923 /* SKWorldAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,14 +75,11 @@
 		3DFB49DC408054F4B3EC70CB /* Pods-Evolution-Evolution iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution iOS.release.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution iOS/Pods-Evolution-Evolution iOS.release.xcconfig"; sourceTree = "<group>"; };
 		3E391ECB6B7BCCD272F90571 /* Pods_Evolution_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B9346CC52B5D74EE9BE7AF /* Pods-Evolution-Evolution macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution-Evolution macOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution-Evolution macOS/Pods-Evolution-Evolution macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		44A4D0051641819F6F17C58F /* SceneKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitController.swift; sourceTree = "<group>"; };
-		44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitAssembler.swift; sourceTree = "<group>"; };
-		44A4D25AE2B695516BAF45CD /* PlainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainAssembler.swift; sourceTree = "<group>"; };
+		44A4D250CBE32709C943CDDD /* UserInterfaceViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D38B206BF336E3B75378 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		44A4D547AD4A34971AA585B9 /* WorldViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D8B55DFD30FC12D44D93 /* AppControllerAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppControllerAssembler.swift; sourceTree = "<group>"; };
-		44A4DBC13772F76398407662 /* PlainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainController.swift; sourceTree = "<group>"; };
 		44A4DDEED4E377F48993908D /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
-		44A4DF26AA77606396945A5F /* ViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssembler.swift; sourceTree = "<group>"; };
 		5DCAFBF054E1DD2B2FA57E5D /* Pods_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A706824908A592725EF6FB2 /* Pods_Evolution_Evolution_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Evolution_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E650E8863C4A3133291069 /* Pods-Evolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution.release.xcconfig"; path = "Target Support Files/Pods-Evolution/Pods-Evolution.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,10 +114,16 @@
 		E71C7BF3228E09400002E7E4 /* VectorMath+Quartz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+Quartz.swift"; sourceTree = "<group>"; };
 		E71C7BF4228E09400002E7E4 /* VectorMath+SceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+SceneKit.swift"; sourceTree = "<group>"; };
 		E71C7BFE228E09DE0002E7E4 /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		E71C7C24228E0B280002E7E4 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
-		E71C7C25228E0B280002E7E4 /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
 		E71C7C26228E0B280002E7E4 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
 		E7E0D7EF74061E0667ACA7BE /* Pods-Evolution iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution iOS.debug.xcconfig"; path = "Target Support Files/Pods-Evolution iOS/Pods-Evolution iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E3334322A3CE8E007F9923 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
+		E7E3334422A3CE8E007F9923 /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
+		E7E3334522A3CE8E007F9923 /* SKWorldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKWorldController.swift; sourceTree = "<group>"; };
+		E7E3334622A3CE8E007F9923 /* SKWorldAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKWorldAssembler.swift; sourceTree = "<group>"; };
+		E7E3334722A3CE8E007F9923 /* WorldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		E7E3334E22A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUserInterfaceAssembler.swift; sourceTree = "<group>"; };
+		E7E3334F22A3CE99007F9923 /* UIKitUserInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUserInterfaceController.swift; sourceTree = "<group>"; };
+		E7E3335022A3CE99007F9923 /* UserInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,21 +165,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		44A4DA4566852D43AB82B275 /* Plain */ = {
+		44A4DA42617E280C9E79EDF7 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				44A4D25AE2B695516BAF45CD /* PlainAssembler.swift */,
-				44A4DBC13772F76398407662 /* PlainController.swift */,
+				E7E3334D22A3CE99007F9923 /* UIKit */,
+				E7E3335022A3CE99007F9923 /* UserInterfaceView.swift */,
+				44A4D250CBE32709C943CDDD /* UserInterfaceViewAssembler.swift */,
 			);
-			path = Plain;
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		44A4DBFDFEDB7889865B4B61 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				E7E3334722A3CE8E007F9923 /* WorldView.swift */,
+				E7E3334122A3CE8E007F9923 /* SceneKit */,
+				44A4D547AD4A34971AA585B9 /* WorldViewAssembler.swift */,
+			);
+			path = World;
 			sourceTree = "<group>";
 		};
 		44A4DDCE0C5C7A77B044DFB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E71C7C22228E0B280002E7E4 /* SceneKit */,
-				44A4DF26AA77606396945A5F /* ViewAssembler.swift */,
-				44A4DA4566852D43AB82B275 /* Plain */,
+				44A4DA42617E280C9E79EDF7 /* UserInterface */,
+				44A4DBFDFEDB7889865B4B61 /* World */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,26 +285,6 @@
 			path = Submodules/VectorMath/VectorMath;
 			sourceTree = SOURCE_ROOT;
 		};
-		E71C7C22228E0B280002E7E4 /* SceneKit */ = {
-			isa = PBXGroup;
-			children = (
-				E71C7C23228E0B280002E7E4 /* Nodes */,
-				E71C7C26228E0B280002E7E4 /* Assets.scnassets */,
-				44A4D0051641819F6F17C58F /* SceneKitController.swift */,
-				44A4D1A26F063BCB6D3548D9 /* SceneKitAssembler.swift */,
-			);
-			path = SceneKit;
-			sourceTree = "<group>";
-		};
-		E71C7C23228E0B280002E7E4 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				E71C7C24228E0B280002E7E4 /* EntityNode.swift */,
-				E71C7C25228E0B280002E7E4 /* FoodNode.swift */,
-			);
-			path = Nodes;
-			sourceTree = "<group>";
-		};
 		E7DAF8F4227CD6B900FC0FD6 = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +305,35 @@
 				E71C7BBA228E05570002E7E4 /* Evolution.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E7E3334122A3CE8E007F9923 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				E71C7C26228E0B280002E7E4 /* Assets.scnassets */,
+				E7E3334222A3CE8E007F9923 /* Nodes */,
+				E7E3334522A3CE8E007F9923 /* SKWorldController.swift */,
+				E7E3334622A3CE8E007F9923 /* SKWorldAssembler.swift */,
+			);
+			path = SceneKit;
+			sourceTree = "<group>";
+		};
+		E7E3334222A3CE8E007F9923 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E7E3334322A3CE8E007F9923 /* EntityNode.swift */,
+				E7E3334422A3CE8E007F9923 /* FoodNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		E7E3334D22A3CE99007F9923 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E7E3334E22A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift */,
+				E7E3334F22A3CE99007F9923 /* UIKitUserInterfaceController.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,12 +543,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E3335322A3CE99007F9923 /* UserInterfaceView.swift in Sources */,
+				E7E3334822A3CE8E007F9923 /* EntityNode.swift in Sources */,
 				E71C7BEA228E08AD0002E7E4 /* Food.swift in Sources */,
+				E7E3334A22A3CE8E007F9923 /* SKWorldController.swift in Sources */,
 				E71C7BD3228E089E0002E7E4 /* Random.swift in Sources */,
+				E7E3335222A3CE99007F9923 /* UIKitUserInterfaceController.swift in Sources */,
+				E7E3334B22A3CE8E007F9923 /* SKWorldAssembler.swift in Sources */,
+				E7E3334C22A3CE8E007F9923 /* WorldView.swift in Sources */,
 				E71C7BAE228E05570002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BF5228E09400002E7E4 /* VectorMath.swift in Sources */,
-				E71C7C2D228E0B280002E7E4 /* EntityNode.swift in Sources */,
-				E71C7C2F228E0B280002E7E4 /* FoodNode.swift in Sources */,
+				E7E3335122A3CE99007F9923 /* UIKitUserInterfaceAssembler.swift in Sources */,
 				E71C7BE0228E08AD0002E7E4 /* Entity.swift in Sources */,
 				E71C7BF9228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */,
 				E71C7BE8228E08AD0002E7E4 /* WorldAssembler.swift in Sources */,
@@ -531,14 +564,12 @@
 				E71C7BF7228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
 				E71C7BAC228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE6228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
+				E7E3334922A3CE8E007F9923 /* FoodNode.swift in Sources */,
 				44A4DEE2735CB067DB13E7C5 /* CommonTypes.swift in Sources */,
-				44A4D5098FF97A2436219B94 /* SceneKitController.swift in Sources */,
-				44A4D5BFF76E1A1D969460E8 /* SceneKitAssembler.swift in Sources */,
 				44A4DAD9F4F5427CDC414181 /* AppController.swift in Sources */,
 				44A4DBE86AEA6B362A793291 /* AppControllerAssembler.swift in Sources */,
-				44A4D2625E03AAA17FD7BED7 /* ViewAssembler.swift in Sources */,
-				44A4D76921023BF3076DD5FB /* PlainAssembler.swift in Sources */,
-				44A4D70C8727D440FF8D6841 /* PlainController.swift in Sources */,
+				44A4DC229B0E81429DCE8DBF /* UserInterfaceViewAssembler.swift in Sources */,
+				44A4D6DAFCE942E04207A6F9 /* WorldViewAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,26 +581,29 @@
 				E71C7BD4228E089E0002E7E4 /* Random.swift in Sources */,
 				E71C7BBF228E05570002E7E4 /* AppViewController.swift in Sources */,
 				E71C7BF6228E09400002E7E4 /* VectorMath.swift in Sources */,
-				E71C7C2E228E0B280002E7E4 /* EntityNode.swift in Sources */,
-				E71C7C30228E0B280002E7E4 /* FoodNode.swift in Sources */,
 				E71C7BE1228E08AD0002E7E4 /* Entity.swift in Sources */,
 				E71C7BFA228E09400002E7E4 /* VectorMath+SceneKit.swift in Sources */,
 				E71C7BE9228E08AD0002E7E4 /* WorldAssembler.swift in Sources */,
 				E71C7BD6228E089E0002E7E4 /* Log.swift in Sources */,
 				E71C7BED228E08AD0002E7E4 /* World.swift in Sources */,
 				E71C7BE5228E08AD0002E7E4 /* SquareWorldAssembler.swift in Sources */,
+				E7E3335722A3CF2D007F9923 /* WorldView.swift in Sources */,
+				E7E3335622A3CF2A007F9923 /* UserInterfaceView.swift in Sources */,
 				E71C7C00228E09DE0002E7E4 /* AppAssembler.swift in Sources */,
+				E7E3335A22A3CF33007F9923 /* SKWorldController.swift in Sources */,
 				E71C7BF8228E09400002E7E4 /* VectorMath+Quartz.swift in Sources */,
+				E7E3335422A3CF27007F9923 /* UIKitUserInterfaceAssembler.swift in Sources */,
+				E7E3335922A3CF33007F9923 /* FoodNode.swift in Sources */,
 				E71C7BBD228E05570002E7E4 /* AppDelegate.swift in Sources */,
 				E71C7BE7228E08AD0002E7E4 /* SquareWorld.swift in Sources */,
 				44A4D7C54DC65B883D0D2631 /* CommonTypes.swift in Sources */,
-				44A4D26725E76DA42D86D8BB /* SceneKitController.swift in Sources */,
-				44A4DDDF006DA56A998DAA21 /* SceneKitAssembler.swift in Sources */,
 				44A4D6AB8F4788F4F7AE0888 /* AppController.swift in Sources */,
 				44A4D5CB29709CCDCF8120DF /* AppControllerAssembler.swift in Sources */,
-				44A4DC503EE5E7EFC5EB6061 /* ViewAssembler.swift in Sources */,
-				44A4DF840739D5BAAE5CBF2A /* PlainAssembler.swift in Sources */,
-				44A4D8747BF0269A33ADE805 /* PlainController.swift in Sources */,
+				E7E3335B22A3CF33007F9923 /* SKWorldAssembler.swift in Sources */,
+				E7E3335822A3CF33007F9923 /* EntityNode.swift in Sources */,
+				E7E3335522A3CF28007F9923 /* UIKitUserInterfaceController.swift in Sources */,
+				44A4DC745C3A343C844E0AF6 /* UserInterfaceViewAssembler.swift in Sources */,
+				44A4D48082A406CAB07C4187 /* WorldViewAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,7 @@ protocol AppController {
 class MainAppController: AppController {
 
     /// The global assembler
-    let mainView: RootView
+    let mainView: WorldView
 
     /// The user interface view
     let uiView:   UserInterfaceView
@@ -29,7 +29,7 @@ class MainAppController: AppController {
     let world:    World
 
     /// Constructor with dependencies
-    init(rootView: RootView, uiView: UserInterfaceView, world: World) {
+    init(rootView: WorldView, uiView: UserInterfaceView, world: World) {
         self.mainView = rootView
         self.uiView = uiView
         self.world = world

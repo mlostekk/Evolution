@@ -4,7 +4,7 @@ import SceneKit
 import RxSwift
 
 /// The SceneKit controller
-class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
+class SKWorldController: NSObject, WorldView, SCNSceneRendererDelegate {
 
     /// The main SceneKit view
     private var view:           SCNView    = SCNView(frame: .zero)

@@ -5,8 +5,8 @@ import Foundation
 /// Global assembler aggregate
 protocol Assembler: AppControllerAssembler,
                     SquareWorldAssembler,
-                    SceneKitAssembler,
-                    PlainAssembler {
+                    SKWorldAssembler,
+                    UIKitUserInterfaceAssembler {
 }
 
 /// Global assembler instance

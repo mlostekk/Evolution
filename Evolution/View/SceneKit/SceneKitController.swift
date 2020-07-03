@@ -40,7 +40,7 @@ class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
     }
 
     /// Create the view
-    func initialize(with size: CGSize) -> XView {
+    func initialize(with size: CGSize) -> UIView {
         view.frame = CGRect(origin: .zero, size: size)
         scene = SCNScene(named: "Assets.scnassets/MainScene.scn")
         scene?.rootNode.addChildNode(entityRootNode)
@@ -77,12 +77,12 @@ class SceneKitController: NSObject, RootView, SCNSceneRendererDelegate {
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.5
 
-                material.emission.contents = XColor.black
+                material.emission.contents = UIColor.black
 
                 SCNTransaction.commit()
             }
 
-            material.emission.contents = XColor.red
+            material.emission.contents = UIColor.red
 
             SCNTransaction.commit()
         }

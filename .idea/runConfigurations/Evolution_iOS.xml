@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Evolution iOS" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Evolution" TARGET_NAME="Evolution iOS" CONFIG_NAME="Debug" SCHEME_NAME="Evolution iOS" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="Evolution" RUN_TARGET_NAME="Evolution iOS" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
-    <embedded_app_extension_list />
-    <method v="2">
-      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-    </method>
-  </configuration>
-</component>

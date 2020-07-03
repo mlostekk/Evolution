@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1030"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E71C7BA8228E05570002E7E4"
+               BlueprintIdentifier = "E765338F24901D670091056B"
                BuildableName = "Evolution.app"
-               BlueprintName = "Evolution iOS"
+               BlueprintName = "Evolution"
                ReferencedContainer = "container:Evolution.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,13 +28,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E76533A524901D680091056B"
+               BuildableName = "EvolutionTests.xctest"
+               BlueprintName = "EvolutionTests"
+               ReferencedContainer = "container:Evolution.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E71C7BA8228E05570002E7E4"
+            BlueprintIdentifier = "E765338F24901D670091056B"
             BuildableName = "Evolution.app"
-            BlueprintName = "Evolution iOS"
+            BlueprintName = "Evolution"
             ReferencedContainer = "container:Evolution.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E71C7BA8228E05570002E7E4"
+            BlueprintIdentifier = "E765338F24901D670091056B"
             BuildableName = "Evolution.app"
-            BlueprintName = "Evolution iOS"
+            BlueprintName = "Evolution"
             ReferencedContainer = "container:Evolution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E71C7BA8228E05570002E7E4"
+            BlueprintIdentifier = "E765338F24901D670091056B"
             BuildableName = "Evolution.app"
-            BlueprintName = "Evolution iOS"
+            BlueprintName = "Evolution"
             ReferencedContainer = "container:Evolution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

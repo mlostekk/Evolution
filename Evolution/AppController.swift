@@ -2,6 +2,7 @@
 
 import Foundation
 import CoreGraphics
+import UIKit
 
 /// Root view controller protocol
 /// Used by platform agnostic view controllers
@@ -9,7 +10,7 @@ import CoreGraphics
 protocol AppController {
 
     /// Create the main view that should be attached
-    func initialize(with size: CGSize) -> XView
+    func initialize(with size: CGSize) -> UIView
 
     /// Forward a click
     func handleClick(atPoint point: CGPoint)
@@ -36,7 +37,7 @@ class MainAppController: AppController {
     }
 
     /// The main initialization. Returns the main view
-    func initialize(with size: CGSize) -> XView {
+    func initialize(with size: CGSize) -> UIView {
         let view = mainView.initialize(with: size)
         uiView.initialize(within: view)
         return view

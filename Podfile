@@ -1,23 +1,15 @@
-# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
 
 def import_pods
   use_frameworks!
-  pod 'SnapKit'
   pod 'RxSwift'
-  pod 'RxCocoa'
+  #pod 'RxCocoa'
 end
 
-target 'Evolution iOS' do
-  platform :ios, '10.0'
+target 'Evolution' do
   import_pods
 end
 
-target 'Evolution macOS' do
-  platform :osx, '10.14'
-  import_pods
+target 'EvolutionTests' do
+	pod 'Nimble'
 end
-
-#target 'EvolutionTests' do
-#  pod 'RxBlocking'
-#  pod 'RxTest'
-#end

@@ -2,6 +2,8 @@
 
 import SceneKit
 import RxSwift
+import SnapKit
+import UIKit
 
 /// The SceneKit controller
 class SKWorldController: NSObject, WorldView, SCNSceneRendererDelegate {
@@ -40,8 +42,8 @@ class SKWorldController: NSObject, WorldView, SCNSceneRendererDelegate {
     }
 
     /// Create the view
-    func initialize(with size: CGSize) -> XView {
-        view.frame = CGRect(origin: .zero, size: size)
+    func initialize(within parent: UIView) -> UIView {
+        view.frame = parent.bounds
         scene = SCNScene(named: "Assets.scnassets/MainScene.scn")
         scene?.rootNode.addChildNode(entityRootNode)
 
@@ -56,6 +58,10 @@ class SKWorldController: NSObject, WorldView, SCNSceneRendererDelegate {
         /// set the scene
         view.scene = scene
 
+        parent.addSubview(view)
+        view.snp.makeConstraints { make in
+            make.left.top.right.bottom.equalToSuperview()
+        }
         return view
     }
 
@@ -77,12 +83,12 @@ class SKWorldController: NSObject, WorldView, SCNSceneRendererDelegate {
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.5
 
-                material.emission.contents = XColor.black
+                material.emission.contents = UIColor.black
 
                 SCNTransaction.commit()
             }
 
-            material.emission.contents = XColor.red
+            material.emission.contents = UIColor.red
 
             SCNTransaction.commit()
         }

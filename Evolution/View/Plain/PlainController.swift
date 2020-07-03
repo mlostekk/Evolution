@@ -13,7 +13,7 @@ class PlainController: NSObject, UserInterfaceView {
         super.init()
     }
 
-    func initialize(within view: XView) {
+    func initialize(within view: UIView) {
         view.addSubview(slider)
     }
 }

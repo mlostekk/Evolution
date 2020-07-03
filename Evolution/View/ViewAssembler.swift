@@ -12,7 +12,7 @@ protocol ViewAssembler {
 protocol RootView {
 
     /// get view
-    func initialize(with size: CGSize) -> XView
+    func initialize(with size: CGSize) -> UIView
 
     /// click
     func handleClick(atPoint point: CGPoint)
@@ -23,6 +23,6 @@ protocol RootView {
 protocol UserInterfaceView {
 
     /// Create and attach to the given view
-    func initialize(within view: XView)
+    func initialize(within view: UIView)
 
 }

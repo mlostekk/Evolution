@@ -7,17 +7,14 @@ def import_pods
   pod 'RxCocoa'
 end
 
-target 'Evolution iOS' do
-  platform :ios, '10.0'
+target 'Evolution' do
+  platform :ios, '13.1'
   import_pods
 end
 
-target 'Evolution macOS' do
-  platform :osx, '10.14'
-  import_pods
+target 'EvolutionTests' do
+  platform :ios, '13.1'
+  pod 'RxBlocking'
+  pod 'RxTest'
+  pod 'Nimble'
 end
-
-#target 'EvolutionTests' do
-#  pod 'RxBlocking'
-#  pod 'RxTest'
-#end

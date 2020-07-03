@@ -28,7 +28,7 @@ class AppViewController: UIViewController {
         super.viewDidLoad()
 
         // create main render view
-        rootView = rootController.initialize(with: self.view.frame.size)
+        rootView = rootController.initialize(within: self.view)
         self.view.addSubview(rootView)
 
         // Add a tap gesture recognizer
@@ -46,14 +46,10 @@ class AppViewController: UIViewController {
     }
 
     /// Fullscreen
-    override var prefersStatusBarHidden:         Bool {
-        return true
-    }
+    override var prefersStatusBarHidden:         Bool { true }
 
     /// Should automatically rotate
-    override var shouldAutorotate:               Bool {
-        return true
-    }
+    override var shouldAutorotate:               Bool { true }
 
     /// Orientation locks
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

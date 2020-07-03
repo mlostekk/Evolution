@@ -2,30 +2,30 @@
 //  EvolutionTests.swift
 //  EvolutionTests
 //
-//  Created by Martin Mlostek on 06.05.19.
-//  Copyright © 2019 Nomad5. All rights reserved.
+//  Created by Martin Mlostek on 03.07.20.
+//  Copyright © 2020 Nomad5. All rights reserved.
 //
 
 import XCTest
 
 class EvolutionTests: XCTestCase {
 
-    override func setUp() {
+    override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
-    override func tearDown() {
+    override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testPerformanceExample() {
+    func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

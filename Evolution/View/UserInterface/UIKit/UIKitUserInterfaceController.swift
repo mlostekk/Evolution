@@ -2,12 +2,13 @@
 
 import RxSwift
 import SnapKit
+import UIKit
 
 /// The UIKit based ui controller
 class UIKitUserInterfaceController: NSObject, UserInterfaceView {
 
     // TODO
-    let slider = XSlider(frame: CGRect(x: 20, y: 20, width: 280, height: 20))
+    let slider = UISlider(frame: CGRect(x: 20, y: 20, width: 280, height: 20))
 
     /// Construction
     override init() {
@@ -15,7 +16,7 @@ class UIKitUserInterfaceController: NSObject, UserInterfaceView {
     }
 
     /// TODO
-    func initialize(within view: XView) {
+    func initialize(within view: UIView) {
         view.addSubview(slider)
     }
 }
